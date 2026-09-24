@@ -10,9 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F2FBF6; --ink:#0E2A1F; --muted:#46594F; --line:#D3E8DC; --card:#FFFFFF;
-  --accent:#047857; --accent-dark:#035C43; --mint:#D3F2E2;
-  --sun:#FFC933; --sun-soft:#FFF4D1; --sun-ink:#3D2C00; --footer-muted:#A9C9B8;
+  --bg:#FFF4F8; --ink:#2A0A18; --muted:#5E3A4B; --line:#F5D6E3; --card:#FFFFFF;
+  --accent:#B81D5C; --accent-dark:#8F1647; --mint:#FFE0EC;
+  --sun:#CFF1EE; --sun-soft:#E3F7F5; --sun-ink:#083F3C; --footer-muted:#CDA9B8;
   --serif:"Fraunces", Georgia, serif; --sans:"Figtree", "Helvetica Neue", Arial, sans-serif;
   --pad:120px;
 }
@@ -44,7 +44,7 @@ header.cs .dek{margin:24px 0 0;max-width:760px;font-size:clamp(19px,1.7vw,22px);
 
 .results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--sun);color:var(--sun-ink);border-radius:16px}
 .res{padding:32px 28px}
-.res + .res{border-left:1px solid rgba(61,44,0,.18)}
+.res + .res{border-left:1px solid rgba(11,16,38,.18)}
 .res b{display:block;font-family:var(--serif);font-size:44px;font-weight:500;line-height:1.1}
 .res span{font-size:15px}
 
@@ -111,7 +111,7 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
   :root{--pad:24px}
   .menu{gap:20px;font-size:15px}
   .results{grid-template-columns:1fr}
-  .res + .res{border-left:0;border-top:1px solid rgba(61,44,0,.18)}
+  .res + .res{border-left:0;border-top:1px solid rgba(11,16,38,.18)}
   .role,.gallery,.next{grid-template-columns:1fr}
   .glance{padding:24px}
   .glance dl{grid-template-columns:1fr;gap:2px}
@@ -138,10 +138,33 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
 .slides li{margin-bottom:6px;break-inside:avoid}
 .sample figcaption{margin-top:8px;font-size:14px;color:var(--muted)}
 @media (max-width:700px){.cal{grid-template-columns:1fr 1fr}.slides{columns:1}}
+
+/* Magenta and teal */
+:root{--magenta:#D6246E;--teal:#0B7A75;--on-mag:#FFFFFF;--on-mag-muted:#FFE3EE}
+.top{background:var(--magenta);color:var(--on-mag)}
+.top nav{border-bottom:1px solid rgba(255,255,255,.22)}
+.top .brand,.top .menu a{color:var(--on-mag)}
+.top .menu a:hover{color:#CFF1EE}
+.top a:focus-visible{outline-color:#FFFFFF}
+.top .eyebrow{color:var(--on-mag)}
+.top .hero p,.top header.cs .dek{color:var(--on-mag-muted)}
+.top .btn.primary{background:#FFFFFF;color:#7A0F3C}
+.top .btn.primary:hover{background:#CFF1EE;color:#083F3C}
+.top .btn.secondary{border-color:var(--on-mag);color:var(--on-mag)}
+.top .btn.secondary:hover{background:var(--on-mag);border-color:var(--on-mag);color:#7A0F3C}
+.top .back{color:var(--on-mag)}
+.top .tag{background:rgba(255,255,255,.2);color:var(--on-mag)}
+.top .facts{border-top-color:rgba(255,255,255,.22)}
+.top .facts small{color:var(--on-mag-muted)}
+.stats,.results{background:var(--teal);color:#FFFFFF}
+.stat + .stat,.res + .res{border-left-color:rgba(255,255,255,.22)}
+.stats-wrap{background:linear-gradient(var(--magenta) 50%, var(--bg) 50%)}
+footer h2{color:#7FE0D8}
 </style>
 </head>
 <body>
 
+<div class="top">
 <nav>
   <div class="wrap">
     <a class="brand" href="index.html">Janani Rangarajan</a>
@@ -152,8 +175,7 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
     </div>
   </div>
 </nav>
-
-<main class="wrap">
+<div class="wrap">
   <a class="back" href="index.html#work">← All case studies</a>
 
   <header class="cs">
@@ -167,8 +189,11 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
       <div><small>Audience</small><div>Industry analysts, enterprise buyers, sales</div></div>
     </div>
   </header>
+</div></div>
 
-  <section class="results" aria-label="Key results">
+<main class="wrap">
+
+  <section class="results" style="margin-top:56px" aria-label="Key results">
     <div class="res"><b>5</b><span>Analyst firms featuring Uniphore: Gartner, Forrester, IDC, Everest Group, Opus Research</span></div>
     <div class="res"><b>Repeat</b><span>Leader and challenger positions in analyst research</span></div>
     <div class="res"><b>1 fewer</b><span>Friction point in enterprise sales cycles: buyers could now see analyst validation</span></div>

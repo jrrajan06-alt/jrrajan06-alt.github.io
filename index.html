@@ -11,9 +11,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F2FBF6; --ink:#0E2A1F; --muted:#46594F; --line:#D3E8DC; --card:#FFFFFF;
-  --accent:#047857; --accent-dark:#035C43; --mint:#D3F2E2;
-  --sun:#FFC933; --sun-ink:#3D2C00; --footer-muted:#A9C9B8;
+  --bg:#FFF4F8; --ink:#2A0A18; --muted:#5E3A4B; --line:#F5D6E3; --card:#FFFFFF;
+  --accent:#B81D5C; --accent-dark:#8F1647; --mint:#FFE0EC;
+  --sun:#CFF1EE; --sun-ink:#083F3C; --footer-muted:#CDA9B8;
   --serif:"Fraunces", Georgia, serif; --sans:"Figtree", "Helvetica Neue", Arial, sans-serif;
   --pad:120px;
 }
@@ -45,7 +45,7 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-
 
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--sun);color:var(--sun-ink);border-radius:16px}
 .stat{padding:32px 28px;display:flex;flex-direction:column;gap:6px}
-.stat + .stat{border-left:1px solid rgba(61,44,0,.18)}
+.stat + .stat{border-left:1px solid rgba(11,16,38,.18)}
 .stat b{font-family:var(--serif);font-size:44px;font-weight:500;line-height:1.1}
 .stat span{font-size:15px}
 
@@ -94,7 +94,7 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stat{padding:24px 18px}
   .stat:nth-child(3){border-left:0}
-  .stat:nth-child(n+3){border-top:1px solid rgba(61,44,0,.18)}
+  .stat:nth-child(n+3){border-top:1px solid rgba(11,16,38,.18)}
   .featured{padding-top:64px}
   .section-title,footer h2{font-size:32px}
   .card{padding:28px}
@@ -105,10 +105,33 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
   nav .wrap{flex-direction:column;align-items:flex-start;gap:12px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Magenta and teal */
+:root{--magenta:#D6246E;--teal:#0B7A75;--on-mag:#FFFFFF;--on-mag-muted:#FFE3EE}
+.top{background:var(--magenta);color:var(--on-mag)}
+.top nav{border-bottom:1px solid rgba(255,255,255,.22)}
+.top .brand,.top .menu a{color:var(--on-mag)}
+.top .menu a:hover{color:#CFF1EE}
+.top a:focus-visible{outline-color:#FFFFFF}
+.top .eyebrow{color:var(--on-mag)}
+.top .hero p,.top header.cs .dek{color:var(--on-mag-muted)}
+.top .btn.primary{background:#FFFFFF;color:#7A0F3C}
+.top .btn.primary:hover{background:#CFF1EE;color:#083F3C}
+.top .btn.secondary{border-color:var(--on-mag);color:var(--on-mag)}
+.top .btn.secondary:hover{background:var(--on-mag);border-color:var(--on-mag);color:#7A0F3C}
+.top .back{color:var(--on-mag)}
+.top .tag{background:rgba(255,255,255,.2);color:var(--on-mag)}
+.top .facts{border-top-color:rgba(255,255,255,.22)}
+.top .facts small{color:var(--on-mag-muted)}
+.stats,.results{background:var(--teal);color:#FFFFFF}
+.stat + .stat,.res + .res{border-left-color:rgba(255,255,255,.22)}
+.stats-wrap{background:linear-gradient(var(--magenta) 50%, var(--bg) 50%)}
+footer h2{color:#7FE0D8}
 </style>
 </head>
 <body>
 
+<div class="top">
 <nav>
   <div class="wrap">
     <a class="brand" href="index.html">Janani Rangarajan</a>
@@ -120,8 +143,7 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
   </div>
 </nav>
 
-<main>
-  <section class="wrap hero">
+<section class="wrap hero">
     <div class="eyebrow">Product marketing · Analyst relations · Pricing</div>
     <h1>I build product marketing, analyst relations, and GTM functions from zero.</h1>
     <p>Product marketer with 9+ years across CCaaS, conversational AI, HR tech, fintech, and procurement tech. Based in India, open to roles across EMEA and APAC.</p>
@@ -130,16 +152,18 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
       <a class="btn secondary" href="resume.pdf">Download resume</a>
     </div>
   </section>
+</div>
 
-  <div class="wrap">
+  <div class="stats-wrap"><div class="wrap">
     <section class="stats" aria-label="Key numbers">
       <div class="stat"><b>5</b><span>Analyst firms citing work I led: Gartner, Forrester, IDC, Everest, Opus</span></div>
       <div class="stat"><b>2</b><span>Acquisitions shaped by market research I ran</span></div>
       <div class="stat"><b>330+</b><span>People on the enablement program I rebuilt</span></div>
       <div class="stat"><b>3x</b><span>Founding PMM, building the function from scratch</span></div>
     </section>
-  </div>
+  </div></div>
 
+<main>
   <!--
     HOW TO LINK A FINISHED CASE STUDY
     Each case study below is a <div>. When its page is ready, change the opening <div to <a href="page-name.html"
