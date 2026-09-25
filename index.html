@@ -126,6 +126,13 @@ footer h2{font-size:40px;margin-bottom:16px;color:var(--sun)}
 .stats,.results{background:var(--teal);color:#FFFFFF}
 .stat + .stat,.res + .res{border-left-color:rgba(255,255,255,.22)}
 .stats-wrap{background:linear-gradient(var(--magenta) 50%, var(--bg) 50%)}
+.stat:nth-child(4n+1){border-left:0}
+.stat:nth-child(n+5){border-top:1px solid rgba(255,255,255,.22)}
+@media (max-width:700px){
+  .stat:nth-child(odd){border-left:0}
+  .stat:nth-child(even){border-left:1px solid rgba(255,255,255,.22)}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.22)}
+}
 footer h2{color:#7FE0D8}
 </style>
 </head>
@@ -136,7 +143,7 @@ footer h2{color:#7FE0D8}
   <div class="wrap">
     <a class="brand" href="index.html">Janani Rangarajan</a>
     <div class="menu">
-      <a href="#work">Case studies</a>
+      <a href="#work">Portfolio</a>
       <a href="resume.pdf">Resume</a>
       <a href="#contact">Contact</a>
     </div>
@@ -148,7 +155,7 @@ footer h2{color:#7FE0D8}
     <h1>I build product marketing, analyst relations, and GTM functions from zero.</h1>
     <p>Product marketer with 9+ years across CCaaS, conversational AI, HR tech, fintech, and procurement tech. Based in India, open to roles across EMEA and APAC.</p>
     <div class="buttons">
-      <a class="btn primary" href="#work">See case studies</a>
+      <a class="btn primary" href="#work">See portfolio</a>
       <a class="btn secondary" href="resume.pdf">Download resume</a>
     </div>
   </section>
@@ -158,8 +165,12 @@ footer h2{color:#7FE0D8}
     <section class="stats" aria-label="Key numbers">
       <div class="stat"><b>5</b><span>Analyst firms citing work I led: Gartner, Forrester, IDC, Everest, Opus</span></div>
       <div class="stat"><b>2</b><span>Acquisitions shaped by market research I ran</span></div>
-      <div class="stat"><b>330+</b><span>People on the enablement program I rebuilt</span></div>
+      <div class="stat"><b>~400</b><span>Sales and BDR team members on the enablement program I built</span></div>
       <div class="stat"><b>3x</b><span>Founding PMM, building the function from scratch</span></div>
+      <div class="stat"><b>1x</b><span>Unicorn, where I led product marketing</span></div>
+      <div class="stat"><b>&gt;25%</b><span>Faster enterprise deal velocity from my positioning, enablement, and CI work</span></div>
+      <div class="stat"><b>$100M+</b><span>In revenue from launches and GTM programs I led</span></div>
+      <div class="stat"><b>6</b><span>At-risk enterprise customers retained through a shift to consumption pricing</span></div>
     </section>
   </div></div>
 
@@ -167,7 +178,7 @@ footer h2{color:#7FE0D8}
   <!--
     HOW TO LINK A FINISHED CASE STUDY
     Each case study below is a <div>. When its page is ready, change the opening <div to <a href="page-name.html"
-    and the closing </div> (for that item only) to </a>. The link styling and "Read case study" line appear automatically.
+    and the closing </div> (for that item only) to </a>. The link styling and "Read more" line appear automatically.
   -->
 
   <section id="work" class="wrap featured">
@@ -177,20 +188,20 @@ footer h2{color:#7FE0D8}
         <div class="label">Analyst relations · Uniphore</div>
         <h3>Building an analyst relations function from scratch</h3>
         <p>Repeat leader and challenger mentions across Gartner, Forrester, IDC, Everest Group, and Opus Research.</p>
-        <div class="more">Read case study →</div>
+        <div class="more">Read more →</div>
       </a>
-      <div class="card">
+      <a class="card" href="pricing-uniphore-consumption.html">
         <div class="label">Pricing · Uniphore</div>
         <h3>Moving from seat-based to consumption pricing</h3>
         <p>A pricing shift grounded in market research that kept 6 customers who were on the verge of leaving.</p>
-        <div class="more">Read case study →</div>
-      </div>
-      <div class="card">
+        <div class="more">Read more →</div>
+      </a>
+      <a class="card" href="launch-uniphore-platform.html">
         <div class="label">Launch · Uniphore</div>
         <h3>Launching the unified platform at a flagship event</h3>
         <p>New AI Blueprint positioning and end-to-end demos: 75 MQLs from Fortune 500 enterprises.</p>
-        <div class="more">Read case study →</div>
-      </div>
+        <div class="more">Read more →</div>
+      </a>
     </div>
   </section>
 
@@ -199,31 +210,39 @@ footer h2{color:#7FE0D8}
     <p>Grouped by the kind of work. Each one covers the problem, my role, the key decisions, and the results.</p>
 
     <div class="group">
-      <div><h3>Product launch</h3><div class="sub">Positioning, messaging, and GTM</div><div class="count">7 case studies</div></div>
+      <div><h3>Product launch</h3><div class="sub">Positioning, messaging, and GTM</div><div class="count">10 case studies</div></div>
       <div>
-        <div class="item"><div><div class="t">Unified platform launch</div><div class="r">75 MQLs from Fortune 500 enterprises at a flagship industry event</div></div><div class="co">Uniphore</div></div>
-        <div class="item"><div><div class="t">Empuls survey feature launch</div><div class="r">$0 to $1M ARR; adoption from 5% to 65% of paid customers</div></div><div class="co">Xoxoday</div></div>
-        <div class="item"><div><div class="t">Pentimenti: 0 to €750K ARR</div><div class="r">Building the PMM function for a procurement tech startup entering the US and EMEA</div></div><div class="co">A Saasy Lassie</div></div>
-        <div class="item"><div><div class="t">Plum holiday season GTM</div><div class="r">$200M in sales and $8M in revenue across India, the Middle East, and the USA</div></div><div class="co">Xoxoday</div></div>
-        <div class="item"><div><div class="t">J1ffy product launch</div><div class="r">150 free-trial sign-ups at launch; later scaled from $0 to $1M ARR</div></div><div class="co">J1ffy</div></div>
-        <div class="item"><div><div class="t">SG Agrotech launch</div><div class="r">Scaled a subscription agri-tech product to 100,000 farmers and $100K MRR</div></div><div class="co">SG Agrotech</div></div>
-        <div class="item"><div><div class="t">Productizing a CFO offering</div><div class="r">First marketing hire at a boutique investment bank; $100K MRR</div></div><div class="co">Smart Advisors</div></div>
+        <a class="item" href="launch-uniphore-platform.html"><div><div class="t">Unified platform launch</div><div class="r">75 Fortune 500 MQLs in North America from a flagship industry event</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="positioning-uniphore-ai-blueprint.html"><div><div class="t">AI Blueprint positioning</div><div class="r">Stage 2 to 3 deal velocity up 50%, deal closure time down 25%, and a $1M closure</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="gtm-uniphore-anz-mena.html"><div><div class="t">Partner-led market entry into ANZ and MENA</div><div class="r">20 enterprise MQLs in ANZ; $1.3M closed in Europe and $10M in the Middle East in FY24</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="positioning-genesys-bpo.html"><div><div class="t">Localized positioning for BPOs in India</div><div class="r">$3M in fresh BPO pipeline in 3 months and $1M closed in 6 months</div></div><div class="co">Genesys</div></a>
+        <a class="item" href="launch-empuls.html"><div><div class="t">Empuls Pulse Survey launch</div><div class="r">4 feature-first customers within a month of launch and 10 within 3 months; $0 to $1M ARR</div></div><div class="co">Xoxoday</div></a>
+        <a class="item" href="gtm-plum-holiday.html"><div><div class="t">Plum holiday season GTM</div><div class="r">$200M in sales, $8M in revenue, and 100 new enterprise customers</div></div><div class="co">Xoxoday</div></a>
+        <a class="item" href="growth-pentimenti.html"><div><div class="t">Pentimenti: 0 to €750K ARR</div><div class="r">Building the PMM function for a procurement tech startup entering the US and EMEA</div></div><div class="co">A Saasy Lassie</div></a>
+        <a class="item" href="launch-j1ffy.html"><div><div class="t">J1ffy launch in an Excel-dominated industry</div><div class="r">150 free-trial sign-ups at launch and 10 paying customers in 6 months; later scaled to $1M ARR</div></div><div class="co">J1ffy</div></a>
+        <a class="item" href="launch-sg-agrotech.html"><div><div class="t">SG Agrotech launch</div><div class="r">Scaled a subscription agri-tech product to 100,000 farmers and $100K MRR</div></div><div class="co">SG Agrotech</div></a>
+        <a class="item" href="launch-cfo-offering.html"><div><div class="t">Productizing a CFO offering</div><div class="r">First marketing hire at a boutique investment bank; $100K MRR</div></div><div class="co">Smart Advisors</div></a>
       </div>
     </div>
 
     <div class="group">
-      <div><h3>GTM enablement and customer advocacy</h3><div class="count">1 case study</div></div>
+      <div><h3>GTM enablement and customer advocacy</h3><div class="count">5 case studies</div></div>
       <div>
-        <div class="item"><div><div class="t">Sales enablement program for 330+ people</div><div class="r">Redesigned onboarding and enablement across sales, SDRs, CS, partners, and marketing: 30% faster ramp-up</div></div><div class="co">Uniphore</div></div>
+        <a class="item" href="enable-sales-uniphore.html"><div><div class="t">Sales enablement program for ~400 people</div><div class="r">75% faster ramp-up, 100% micro-lesson adoption, and asset usage up 50%</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="enable-partners-uniphore.html"><div><div class="t">Partner enablement program</div><div class="r">Partner ramp-up time down 45% and asset usage up 35%</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="advocacy-plum-board.html"><div><div class="t">Customer advocacy board</div><div class="r">A 30-customer board, 45 enterprise MQLs in 3 months, and 15 testimonial videos</div></div><div class="co">Xoxoday (Plum)</div></a>
+        <a class="item" href="advocacy-xoxoday-videos.html"><div><div class="t">Co-branded video testimonials</div><div class="r">20 video testimonials in a quarter and organic web traffic up 25%</div></div><div class="co">Xoxoday</div></a>
+        <a class="item" href="advocacy-uniphore-stories.html"><div><div class="t">Customer stories and use-case repository</div><div class="r">A monthly process to capture use cases and stories, built into the enablement platform and win-loss</div></div><div class="co">Uniphore</div></a>
       </div>
     </div>
 
     <div class="group">
-      <div><h3>Competitive intelligence</h3><div class="count">3 case studies</div></div>
+      <div><h3>Competitive intelligence</h3><div class="count">4 case studies</div></div>
       <div>
-        <div class="item"><div><div class="t">Competitive intelligence program for sales and the C-suite</div><div class="r">Monthly CI digest with 100% sales adoption; insights fed into a product strategy pivot</div></div><div class="co">Uniphore</div></div>
-        <div class="item"><div><div class="t">Win-loss interview program</div><div class="r">Built a win-loss program from scratch and restructured CI: 25% faster deals</div></div><div class="co">Uniphore</div></div>
-        <div class="item"><div><div class="t">An AI competitive intelligence analyst I built</div><div class="r">A CrewAI and Claude workflow that tracks competitors and drafts battlecards</div></div><div class="co">My build</div></div>
+        <a class="item" href="ci-uniphore-program.html"><div><div class="t">Competitive intelligence program for sales and the C-suite</div><div class="r">Monthly CI digest with 100% sales adoption; insights fed into a product strategy pivot</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="ci-uniphore-battlecards.html"><div><div class="t">On-demand battle cards with Klue and a knowledge bot</div><div class="r">Sales satisfaction up 30% and 100% adoption of the knowledge bot</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="ci-uniphore-winloss.html"><div><div class="t">Win-loss interview program</div><div class="r">Built a win-loss program from scratch and restructured CI: 25% faster deals</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="ci-ai-analyst.html"><div><div class="t">An AI competitive intelligence analyst I built</div><div class="r">A CrewAI and Claude workflow that tracks competitors and drafts battlecards</div></div><div class="co">My build</div></a>
       </div>
     </div>
 
@@ -232,7 +251,7 @@ footer h2{color:#7FE0D8}
       <div>
         <a class="item" href="ar-uniphore.html"><div><div class="t">Building Uniphore's AR function from scratch</div><div class="r">Repeat leader and challenger mentions in five analyst firms' research</div></div><div class="co">Uniphore</div></a>
         <a class="item" href="ar-genesys.html"><div><div class="t">Supporting a Leader position in the Gartner Magic Quadrant and Forrester Wave</div><div class="r">JAPAC input to analyst evaluations; Genesys named a Leader in both 2025 reports</div></div><div class="co">Genesys</div></a>
-        <a class="item" href="ar-xoxoday.html"><div><div class="t">Analyst relations during a funding round</div><div class="r">A 2022 Forrester Wave mention that supported the fundraise and entry into mid-market and enterprise</div></div><div class="co">Xoxoday</div></a>
+        <a class="item" href="ar-xoxoday.html"><div><div class="t">Analyst relations during a funding round</div><div class="r">Mentioned in a Forrester Wave and by IDC within 6 months, supporting the fundraise and entry into new segments</div></div><div class="co">Xoxoday</div></a>
         <a class="item" href="ar-startups.html"><div><div class="t">Analyst relations for early-stage startups</div><div class="r">A structured AR program for four startups entering the US and EMEA; McKinsey invited further discussions in the SRM space</div></div><div class="co">A Saasy Lassie</div></a>
       </div>
     </div>
@@ -240,17 +259,17 @@ footer h2{color:#7FE0D8}
     <div class="group">
       <div><h3>Market research and product strategy</h3><div class="count">2 case studies</div></div>
       <div>
-        <div class="item"><div><div class="t">Market research that led to two acquisitions</div><div class="r">A bi-annual market assessment that shaped product, pricing, and M&amp;A in the language model space</div></div><div class="co">Uniphore</div></div>
-        <div class="item"><div><div class="t">Market assessment behind the Orchestrator messaging</div><div class="r">A global study that influenced product strategy and positioning</div></div><div class="co">Genesys</div></div>
+        <a class="item" href="research-uniphore-acquisitions.html"><div><div class="t">Market research that led to two acquisitions</div><div class="r">A 4-week research exercise that led to two acquisitions and course correction on products with tech debt</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="research-genesys-orchestrator.html"><div><div class="t">Market assessment behind the Orchestrator messaging</div><div class="r">A global study that influenced product strategy and positioning</div></div><div class="co">Genesys</div></a>
       </div>
     </div>
 
     <div class="group">
       <div><h3>Pricing strategy</h3><div class="count">3 case studies</div></div>
       <div>
-        <div class="item"><div><div class="t">From seat-based to consumption pricing</div><div class="r">Retained 6 customers on the verge of leaving</div></div><div class="co">Uniphore</div></div>
-        <div class="item"><div><div class="t">Pricing models for 0-to-1 startups</div><div class="r">Setting prices with no historical data, for Pentimenti and three other startups</div></div><div class="co">A Saasy Lassie</div></div>
-        <div class="item"><div><div class="t">Willingness-to-pay pricing for a PLG product</div><div class="r">Pricing a visa-processing SaaS that scaled from $0 to $1M ARR</div></div><div class="co">J1ffy</div></div>
+        <a class="item" href="pricing-uniphore-consumption.html"><div><div class="t">From seat-based to consumption pricing</div><div class="r">Retained 6 customers on the verge of leaving</div></div><div class="co">Uniphore</div></a>
+        <a class="item" href="pricing-startups.html"><div><div class="t">Pricing models for 0-to-1 startups</div><div class="r">Setting prices with no historical data, for Pentimenti and three other startups</div></div><div class="co">A Saasy Lassie</div></a>
+        <a class="item" href="pricing-j1ffy-wtp.html"><div><div class="t">Willingness-to-pay pricing for a PLG product</div><div class="r">Pricing a visa-processing SaaS that scaled from $0 to $1M ARR</div></div><div class="co">J1ffy</div></a>
       </div>
     </div>
   </section>
