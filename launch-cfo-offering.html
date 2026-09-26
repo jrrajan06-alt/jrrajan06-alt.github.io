@@ -147,6 +147,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.offer{margin:4px 0;overflow-x:auto}.offer>*{min-width:600px}
+.offer .orow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--ink)}
+.offer .ob{padding:16px 14px 18px;border-right:1px solid var(--rule);border-top:4px solid var(--red);background:#fff}
+.offer .ob:last-child{border-right:0}
+.offer .ob:nth-child(even){background:var(--band)}
+.offer .on{display:block;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--red)}
+.offer h4{font-family:var(--head);font-size:20px;margin:6px 0 8px;line-height:1.2}
+.offer .ob p{margin:0;font-size:14.5px;line-height:1.5;color:var(--muted);font-style:italic}
+.offer .oarrow{display:flex;justify-content:center;padding:6px 0}
+.offer .oarrow span{width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-top:14px solid var(--red)}
+.offer .oout{background:var(--ink);color:#fff;text-align:center;padding:14px 12px;font-family:var(--label);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -167,12 +178,12 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Product launch</span><span class="tag">Founding PMM</span></div>
     <h1>Productizing a CFO offering</h1>
     <p class="dek">As the first product marketing and marketing hire at a boutique investment bank, I turned its CFO services into a product and launched it.</p>
-    <div class="facts"><div><small>Company</small><div>Smart Advisors LLP</div></div><div><small>My role</small><div>Founding PMM and Marketer</div></div><div><small>Timeline</small><div>Jun 2015 – Jan 2018</div></div><div><small>Audience</small><div><span class="ph">[Who bought the CFO offering?]</span></div></div></div>
+    <div class="facts"><div><small>Company</small><div>Smart Advisors LLP</div></div><div><small>My role</small><div>Founding PMM and Marketer</div></div><div><small>Timeline</small><div>Jun 2015 – Jan 2018</div></div><div><small>Audience</small><div>Solo founders and startup founders</div></div></div>
   </header>
 </div></div>
 
 <main class="wrap">
-  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>$100K</b><span>Monthly recurring revenue</span></div><div class="res"><b>1st</b><span>Product marketing and marketing hire</span></div><div class="res"><b>0 to 1</b><span>Service turned into a product</span></div></section>
+  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>$100K</b><span>Monthly recurring revenue</span></div><div class="res"><b>60%</b><span>Lower price than the virtual CFO service</span></div><div class="res"><b>0 to 1</b><span>Service turned into a product</span></div></section>
 
   <div class="body">
     <aside class="toc" aria-label="On this page">
@@ -184,7 +195,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
       <div class="glance">
         <h2>At a glance</h2>
         <dl>
-          <dt>Situation</dt><dd><span class="ph">[What was the situation?]</span></dd>
+          <dt>Situation</dt><dd>Virtual CFO services were costly, so customers were hard to find. Productizing the offering brought the cost down.</dd>
           <dt>My role</dt><dd>Productized and launched a CFO offering as the first PMM and marketing hire.</dd>
           <dt>Result</dt><dd>Generated $100K in monthly recurring revenue.</dd>
         </dl>
@@ -192,24 +203,24 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="context"><h2>Context</h2><p>Smart Advisors is a boutique investment bank. I joined as its first product marketing and marketing hire.</p></section>
 
-      <section id="problem"><h2>The problem</h2><p><span class="ph">[What was the challenge? E.g. services sold one by one, no repeatable offer]</span></p></section>
+      <section id="problem"><h2>The problem</h2><p>Virtual CFO services were sold as costly, bespoke engagements, with too many friction points in sales and delays in deal closures.</p></section>
 
       <section id="role">
         <h2>My role</h2>
         <div class="role">
-          <div><h3>I owned</h3><p><span class="ph">[What did you own?]</span></p></div>
-          <div><h3>I worked with</h3><p>Leadership, engineers, and end customers.</p></div>
+          <div><h3>I owned</h3><p>Mapping the product workflow, working with an external tech agency to build the product, and launching it</p></div>
+          <div><h3>I worked with</h3><p>Leadership, engineers, and end customers</p></div>
         </div>
       </section>
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3><span class="ph">[Decision 1]</span></h3><p><span class="ph">[What you did]</span></p><p class="why"><b>Why:</b> <span class="ph">[Why]</span></p></div></li><li><div><h3><span class="ph">[Decision 2]</span></h3><p><span class="ph">[What you did]</span></p><p class="why"><b>Why:</b> <span class="ph">[Why]</span></p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Productize the offering</h3><p>I turned the virtual CFO service into a product, mapping its workflow so it could be delivered the same way for every customer.</p><p class="why"><b>Why:</b> Bespoke engagements were costly and slow to sell. A defined product cut costs and removed friction in the sales process.</p></div></li><li><div><h3>Make it a SaaS subscription</h3><p>We offered the product as a monthly SaaS subscription, priced 60% lower than the virtual CFO offering.</p><p class="why"><b>Why:</b> A lower monthly price suited solo and startup founders, and it gave the business recurring revenue.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Productized offer: structure</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Element</th><th>Question it answers</th></tr></thead><tbody><tr><td>Scope</td><td>What exactly is included?</td></tr><tr><td>Packages</td><td>Which tier fits which company?</td></tr><tr><td>Pricing</td><td>A monthly fee instead of one-off projects</td></tr><tr><td>Proof</td><td>Results for similar clients</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Productized offer: structure</span><b>Illustrative sample</b></div><div class="inner"><div class="offer" role="img" aria-label="Productized offer built from scope, packages, pricing, and proof"><div class="orow"><div class="ob"><span class="on">01</span><h4>Scope</h4><p>What exactly is included?</p></div><div class="ob"><span class="on">02</span><h4>Packages</h4><p>Which tier fits which company?</p></div><div class="ob"><span class="on">03</span><h4>Pricing</h4><p>A monthly fee instead of one-off projects</p></div><div class="ob"><span class="on">04</span><h4>Proof</h4><p>Results for similar clients</p></div></div><div class="oarrow"><span></span></div><div class="oout">One productized CFO offering</div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">

@@ -147,6 +147,19 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.steps{margin:4px 0}
+.steps .scope{display:flex;align-items:center;gap:10px;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.steps .scope i{flex:1;height:2px;background:var(--rule)}
+.steps .scope i:last-of-type{background:linear-gradient(90deg,var(--rule),var(--red))}
+.steps .stcols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:end}
+.steps .st{border:1px solid var(--rule);border-top:4px solid var(--red);padding:16px 16px 18px;background:#fff}
+.steps .st1{min-height:170px}.steps .st2{min-height:200px;background:var(--band)}.steps .st3{min-height:230px;background:var(--ink);color:#fff;border-color:var(--ink);border-top-color:var(--red)}
+.steps .sn{display:block;font-family:var(--head);font-size:28px;font-weight:700;color:var(--red);line-height:1}
+.steps h4{font-family:var(--head);font-size:18px;line-height:1.25;margin:8px 0 12px}
+.steps small{display:block;font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps .st3 small{color:#bbb}
+.steps .st p{margin:4px 0 0;font-size:15px;line-height:1.5}
+@media (max-width:640px){.steps .stcols{grid-template-columns:1fr}.steps .st1,.steps .st2,.steps .st3{min-height:0}}
 </style>
 </head>
 <body>
@@ -167,12 +180,12 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Product launch</span><span class="tag">Positioning</span><span class="tag">PLG</span></div>
     <h1>Launching Empuls Pulse Surveys for PLG and sales-led growth</h1>
     <p class="dek">Xoxoday rebuilt a free survey feature into a 51-factor Pulse Survey and wanted to charge for it. I led the positioning and launch across both self-serve and sales-led motions.</p>
-    <div class="facts"><div><small>Company</small><div>Xoxoday</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Aug 2021 – Oct 2022</div></div><div><small>Audience</small><div>HR leaders at existing and new customers</div></div></div>
+    <div class="facts"><div><small>Company</small><div>Xoxoday</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Aug 2021 – Oct 2022</div></div><div><small>Audience</small><div>HR leaders: existing and new customers</div></div></div>
   </header>
 </div></div>
 
 <main class="wrap">
-  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>10</b><span>Feature-first customers within 3 months (4 in the first month)</span></div><div class="res"><b>25%</b><span>Free trial to paid conversion among existing customers</span></div><div class="res"><b>$1M</b><span>Feature ARR, from zero</span></div></section>
+  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>10</b><span>Feature-first customers within 3 months (4 in the first month)</span></div><div class="res"><b>25%</b><span>Free trial to paid conversion among existing customers</span></div><div class="res"><b>$0.75M</b><span>Feature ARR in one year, from zero</span></div></section>
 
   <div class="body">
     <aside class="toc" aria-label="On this page">
@@ -186,7 +199,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         <dl>
           <dt>Situation</dt><dd>A free eNPS survey was rebuilt into a 51-factor Pulse Survey that the business wanted to monetize.</dd>
           <dt>My role</dt><dd>Led positioning, launch, and GTM across PLG and SLG.</dd>
-          <dt>Result</dt><dd>4 feature-first customers in the first month, 10 within 3 months, and $0 to $1M in feature ARR.</dd>
+          <dt>Result</dt><dd>4 feature-first customers in the first month, 10 within 3 months, and $0 to $0.75M in feature ARR in one year.</dd>
         </dl>
       </div>
 
@@ -197,30 +210,30 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
       <section id="role">
         <h2>My role</h2>
         <div class="role">
-          <div><h3>I owned</h3><p>Positioning, and the full launch and GTM for the Pulse Survey across PLG and SLG.</p></div>
-          <div><h3>I worked with</h3><p>Users, CSMs, and prospects, whose feedback shaped the launch.</p></div>
+          <div><h3>I owned</h3><p>Positioning, and the full launch and GTM for the Pulse Survey across PLG and SLG</p></div>
+          <div><h3>I worked with</h3><p>Users, CSMs, and prospects, whose feedback shaped the launch</p></div>
         </div>
       </section>
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Learn why users weren't getting full value</h3><p>During the beta, I read support tickets and spoke to users, CSMs, and prospects to find out what stopped them using the feature fully.</p><p class="why"><b>Why:</b> You can't charge for a feature customers don't fully use. Finding the friction came first.</p></div></li><li><div><h3>Help customers act on the insights</h3><p>I mapped the friction points and created assets to help customers realize ROI, including three sets of action plans organizations could use once they had their survey results. Workflow changes went into the product, and the assets were placed along the customer journey.</p><p class="why"><b>Why:</b> Survey results only have value if organizations act on them. The action plans turned insights into outcomes.</p></div></li><li><div><h3>Run one launch for two motions</h3><p>I used my four-pillar launch framework, and trained sales to walk sales-led prospects through the approach.</p><p class="why"><b>Why:</b> Self-serve users needed guidance in the product; enterprise buyers needed it from sales.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Learn why users weren't getting full value</h3><p>During the beta, I read support tickets and spoke to users, CSMs, and prospects to find out what stopped them using the feature fully.</p><p class="why"><b>Why:</b> Finding friction points is the first step to solving them.</p></div></li><li><div><h3>Help customers act on the insights</h3><p>I mapped the friction points and created assets to help customers realize ROI, including three sets of action plans organizations could use once they had their survey results. Workflow changes went into the product, and the assets were placed along the customer journey.</p><p class="why"><b>Why:</b> Survey results only have value if organizations act on them. The action plans turned insights into outcomes.</p></div></li><li><div><h3>Run one launch for two motions</h3><p>I used my four-pillar launch framework, and trained sales to walk sales-led prospects through the approach.</p><p class="why"><b>Why:</b> The SLG motion needed our sales team to be equipped to handle enterprise buyers.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>My launch framework: four pillars</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th>Pillar</th><th>What it covers</th></tr></thead><tbody><tr><td>Strategic readiness</td><td>Positioning, messaging, pricing, and launch goals</td></tr><tr><td>Sales enablement</td><td>Training, pitch decks, demos, battlecards, FAQs</td></tr><tr><td>External launch</td><td>Website, campaigns, events, PR, analyst briefings</td></tr><tr><td>Internal communication</td><td>Announcements, asset library, and launch updates for every team</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Pulse Survey action plans: outline</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th>Action plan</th><th>When to use it</th></tr></thead><tbody><tr><td>Quick wins</td><td>Scores dip in a few factors</td></tr><tr><td>Team-level plan</td><td>One team or manager needs support</td></tr><tr><td>Organization-wide plan</td><td>Broad patterns across the company</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Pulse Survey action plans: outline</span><b>Recreated sample</b></div><div class="inner"><div class="steps" role="img" aria-label="Pulse Survey action plans, from quick wins to organization-wide"><div class="scope"><span>Narrow</span><i></i><span>Scope of the issue</span><i></i><span>Broad</span></div><div class="stcols"><div class="st st1"><span class="sn">1</span><h4>Quick wins</h4><small>When to use it</small><p>Scores dip in a few factors</p></div><div class="st st2"><span class="sn">2</span><h4>Team-level plan</h4><small>When to use it</small><p>One team or manager needs support</p></div><div class="st st3"><span class="sn">3</span><h4>Organization-wide plan</h4><small>When to use it</small><p>Broad patterns across the company</p></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>Existing customers (PLG): 40% adopted the free trial, with 25% converting to paid</li><li>New customers (PLG): 20% adopted the free trial, with 15% converting to paid</li><li>4 feature-first customers within one month of launch, and 10 within 3 months</li><li>Feature ARR grew from $0 to $1M, and adoption rose from 5% to 65% of paid customers</li></ul>
+        <ul class="outcomes"><li>Existing customers (PLG): 40% adopted the free trial, with 25% converting to paid</li><li>New customers (PLG): 20% adopted the free trial, with 15% converting to paid</li><li>4 feature-first customers within one month of launch, and 10 within 3 months</li><li>Feature ARR grew from $0 to $0.75M in one year, and adoption rose from 5% to 65% of paid customers</li></ul>
       </section>
     </article>
   </div>
 
   <nav class="next" aria-label="More case studies">
-    <a href="positioning-genesys-bpo.html"><small>← Previous</small><span>Localized positioning for BPOs in India</span></a>
+    <a href="positioning-genesys-bpo.html"><small>← Previous</small><span>Localized positioning for BPOs in APAC</span></a>
     <a href="gtm-plum-holiday.html"><small>Next →</small><span>Plum's holiday season GTM</span></a>
   </nav>
 </main>
