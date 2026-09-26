@@ -147,6 +147,20 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.canvas{margin:4px 0;overflow-x:auto}
+.canvas .cin{min-width:620px}
+.canvas .chub{margin:0 auto;width:max-content;background:var(--ink);color:#fff;padding:10px 22px;font-family:var(--label);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.canvas .clines{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;height:26px}
+.canvas .clines::before{content:"";position:absolute;left:12.5%;right:12.5%;top:12px;height:2px;background:var(--ink)}
+.canvas .clines::after{content:"";position:absolute;left:50%;top:0;width:2px;height:12px;background:var(--ink)}
+.canvas .clines i{justify-self:center;width:2px;height:14px;margin-top:12px;background:var(--ink)}
+.canvas .ccards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.canvas .cv{border:1px solid var(--rule);border-top:4px solid var(--red);padding:14px 14px 16px;background:#fff;text-align:center}
+.canvas .cv:nth-child(even){background:var(--band)}
+.canvas .cv svg{width:28px;height:28px;fill:none;stroke:var(--red);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.canvas .cv small{display:block;margin-top:6px;font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.canvas h4{font-family:var(--head);font-size:18px;margin:4px 0 6px;line-height:1.25}
+.canvas .cv p{margin:0;font-size:14px;line-height:1.45;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -172,7 +186,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 </div></div>
 
 <main class="wrap">
-  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>20%</b><span>Faster paid conversion at one startup after repackaging</span></div><div class="res"><b>Revenue</b><span>Started flowing at another after replacing free POCs</span></div><div class="res"><b>5</b><span>Startups supported</span></div></section>
+  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>Revenue generation</b><span>Startup 1 started getting cashflows</span></div><div class="res"><b>20%</b><span>Faster paid conversion at Startup 2 after repackaging</span></div><div class="res"><b>5</b><span>Startups supported</span></div></section>
 
   <div class="body">
     <aside class="toc" aria-label="On this page">
@@ -186,11 +200,11 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         <dl>
           <dt>Situation</dt><dd>Early-stage startups needed to decide what goes in which plan, with little data to go on.</dd>
           <dt>My role</dt><dd>Designed pricing and packaging, grounded in willingness-to-pay research.</dd>
-          <dt>Result</dt><dd>Revenue started flowing at one startup, and paid conversion sped up by 20% at another.</dd>
+          <dt>Result</dt><dd>Revenue started flowing at Startup 1, and paid conversion sped up by 20% at Startup 2.</dd>
         </dl>
       </div>
 
-      <section id="context"><h2>Context</h2><p>Through my fractional practice, A SaaSy Lassie Consulting, I set up product marketing for early-stage startups, including their pricing models.</p></section>
+      <section id="context"><h2>Context</h2><p>As a fractional PMM through A SaaSy Lassie Consulting, I set up product marketing for early-stage startups, including their pricing models.</p></section>
 
       <section id="problem"><h2>The problem</h2><p>Packaging, deciding what goes into which plan, is the hard part. To get it right, you need to understand how much customers are willing to pay, and how big a problem the product solves for them.</p></section>
 
@@ -204,17 +218,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Start with willingness to pay and problem size</h3><p>Before packaging, I researched how much customers would pay and how much of a problem the product solved.</p><p class="why"><b>Why:</b> Packaging built on assumptions tends to give away too much or charge for too little.</p></div></li><li><div><h3>Replace free POCs with a discounted trial</h3><p>For one startup, we did away with free proofs of concept and offered a discounted trial instead.</p><p class="why"><b>Why:</b> A small upfront commitment attracts customers who are serious about buying, and starts revenue sooner.</p></div></li><li><div><h3>Move the right features into the free plan</h3><p>For another startup, we repackaged: the product's third most valuable capability went into the free plan, and the first and second moved to paid plans.</p><p class="why"><b>Why:</b> The free plan still shows real value, while the most valuable capabilities give users a clear reason to upgrade.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Start with willingness to pay and problem size</h3><p>Before packaging, I researched how much customers would pay and how much of a problem the product solved.</p><p class="why"><b>Why:</b> Packaging built on assumptions tends to give away too much or charge for too little.</p></div></li><li><div><h3>Replace free POCs with a discounted trial</h3><p>For Startup 1, we did away with free proofs of concept and offered a discounted trial instead.</p><p class="why"><b>Why:</b> A small upfront commitment attracts customers who are serious about buying, and starts revenue sooner.</p></div></li><li><div><h3>Move the right features into the free plan</h3><p>For Startup 2, we repackaged: the product's third most valuable capability went into the free plan, and the first and second moved to paid plans.</p><p class="why"><b>Why:</b> The free plan still shows real value, while the most valuable capabilities give users a clear reason to upgrade.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Repackaging: before and after</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th></th><th>Before</th><th>After</th></tr></thead><tbody><tr><td>Free plan</td><td>Included the most valuable capabilities</td><td>Includes the third most valuable capability</td></tr><tr><td>Paid plans</td><td>Less reason to upgrade</td><td>Include the first and second most valuable capabilities</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Pricing model canvas</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Question</th><th>What to decide</th></tr></thead><tbody><tr><td>Value metric</td><td>What customers pay for</td></tr><tr><td>Packages</td><td>Which tiers, and who each is for</td></tr><tr><td>Price points</td><td>Based on value, competitors, and willingness to pay</td></tr><tr><td>Entry offer</td><td>Free plan, trial, or proof of concept</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Repackaging: before and after (Startup 2)</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th></th><th>Before</th><th>After</th></tr></thead><tbody><tr><td>Free plan</td><td>Included the most valuable capabilities</td><td>Includes the third most valuable capability</td></tr><tr><td>Paid plans</td><td>Less reason to upgrade</td><td>Include the first and second most valuable capabilities</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Pricing model canvas</span><b>Illustrative sample</b></div><div class="inner"><div class="canvas" role="img" aria-label="Pricing model canvas: value metric, packages, price points, entry offer"><div class="cin"><div class="chub">Pricing model</div><div class="clines"><i></i><i></i><i></i><i></i></div><div class="ccards"><div class="cv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><small>Decide</small><h4>Value metric</h4><p>What customers pay for</p></div><div class="cv"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="4"/><rect x="3" y="10" width="18" height="4"/><rect x="3" y="16" width="18" height="4"/></svg><small>Decide</small><h4>Packages</h4><p>Which tiers, and who each is for</p></div><div class="cv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l9-9h8v8l-9 9z"/><circle cx="16" cy="8" r="1.5"/></svg><small>Decide</small><h4>Price points</h4><p>Based on value, competitors, and willingness to pay</p></div><div class="cv"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"/></svg><small>Decide</small><h4>Entry offer</h4><p>Free plan, trial, or proof of concept</p></div></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>At one startup, revenue started flowing after replacing free POCs with a discounted trial</li><li>At another, paid conversion accelerated by 20% after repackaging</li></ul>
+        <ul class="outcomes"><li>At Startup 1, revenue started flowing after replacing free POCs with a discounted trial</li><li>At Startup 2, paid conversion accelerated by 20% after repackaging</li></ul>
       </section>
     </article>
   </div>

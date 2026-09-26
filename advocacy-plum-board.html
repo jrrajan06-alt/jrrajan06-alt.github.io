@@ -147,6 +147,16 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.rewards{margin:4px 0;overflow-x:auto}
+.rewards .rin{display:flex;align-items:stretch;min-width:640px}
+.rewards .rstart{flex:0 0 130px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px 10px;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.5}
+.rewards .rarr{flex:0 0 18px;align-self:center;width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:16px solid var(--ink);margin-right:10px}
+.rewards .rcards{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.rewards .rw{border:1px solid var(--rule);border-top:4px solid var(--red);padding:14px 14px 16px;background:#fff}
+.rewards .rw:nth-child(2){background:var(--band)}
+.rewards .ri svg{width:28px;height:28px;fill:none;stroke:var(--red);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.rewards h4{font-family:var(--head);font-size:18px;line-height:1.25;margin:6px 0 6px}
+.rewards .rw p{margin:0;font-size:14.5px;line-height:1.5;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -167,7 +177,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Customer advocacy</span><span class="tag">Enterprise</span></div>
     <h1>Building a customer advocacy board from scratch</h1>
     <p class="dek">As Plum moved into enterprise sales, it wanted its large customer base to shape the roadmap and refer new business. I built an advocacy board and programs to make that happen.</p>
-    <div class="facts"><div><small>Company</small><div>Xoxoday (Plum)</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Aug 2021 – Oct 2022</div></div><div><small>Audience</small><div>Plum's most satisfied customers</div></div></div>
+    <div class="facts"><div><small>Company</small><div>Xoxoday (Plum)</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Aug 2021 – Oct 2022</div></div><div><small>Audience</small><div>Plum's most satisfied customers, with NPS of 9 or 10</div></div></div>
   </header>
 </div></div>
 
@@ -204,17 +214,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Start with the happiest customers</h3><p>The board was made up of customers who had given 4 or 5 in the NPS survey.</p><p class="why"><b>Why:</b> Customers who already liked Plum were the most likely to advocate for it.</p></div></li><li><div><h3>Make roadmap input a habit</h3><p>CSMs used a three-question survey every quarter to gather input on the product roadmap.</p><p class="why"><b>Why:</b> Short, regular input kept customers involved without asking too much of them.</p></div></li><li><div><h3>Reward referrals</h3><p>A referral program offered lower SaaS fees, free "only advocate" offers, and co-created custom branding videos.</p><p class="why"><b>Why:</b> Customers refer more when there is something in it for them.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Start with the happiest customers</h3><p>The board was made up of customers who had given 9 or 10 in the NPS survey.</p><p class="why"><b>Why:</b> Customers who already liked Plum were the most likely to advocate for it.</p></div></li><li><div><h3>Make roadmap input a habit</h3><p>CSMs used a three-question survey every quarter to gather input on the product roadmap.</p><p class="why"><b>Why:</b> Short, regular input kept customers involved without asking too much of them.</p></div></li><li><div><h3>Reward referrals</h3><p>A referral program offered lower SaaS fees, free "only advocate" offers, and co-created custom branding videos.</p><p class="why"><b>Why:</b> Customers refer more when there is something in it for them.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Quarterly roadmap survey</span><b>Illustrative sample</b></div><div class="inner"><ol class="slides"><li>What is the one thing you would change about Plum?</li><li>Which new capability would help your team most?</li><li>How likely are you to recommend Plum to a peer?</li></ol></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Referral rewards</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Reward</th><th>What the customer gets</th></tr></thead><tbody><tr><td>Lower SaaS fees</td><td>A discount for successful referrals</td></tr><tr><td>"Only advocate" offers</td><td>Exclusive perks for board members</td></tr><tr><td>Co-branded video</td><td>A custom branding video about their story</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Quarterly roadmap survey</span><b>Illustrative sample</b></div><div class="inner"><ol class="slides"><li>What is the one thing you would change about Plum?</li><li>Which new capability would help your team most?</li><li>How likely are you to recommend Plum to a peer?</li></ol></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Referral rewards</span><b>Illustrative sample</b></div><div class="inner"><div class="rewards" role="img" aria-label="Referral rewards: lower SaaS fees, only advocate offers, co-branded video"><div class="rin"><div class="rstart"><span>Customer refers<br>a new business</span></div><div class="rarr"></div><div class="rcards"><div class="rw"><span class="ri"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/><path d="M19 5 5 19"/></svg></span><h4>Lower SaaS fees</h4><p>A discount for successful referrals</p></div><div class="rw"><span class="ri"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><h4>"Only advocate" offers</h4><p>Exclusive perks for board members</p></div><div class="rw"><span class="ri"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M10 9l5 3-5 3z"/></svg></span><h4>Co-branded video</h4><p>A custom branding video about their story</p></div></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>A healthy advocacy board of 30 customers</li><li>45 enterprise MQLs in 3 months</li><li>15 customer testimonial and co-branded videos created</li></ul>
+        <ul class="outcomes"><li>A healthy advocacy board of 30 customers</li><li>45 enterprise MQLs in 3 months</li><li>15 customer testimonial and co-branded videos created (part of Xoxoday's wider <a href="advocacy-xoxoday-videos.html">video testimonial program</a>)</li></ul>
       </section>
     </article>
   </div>

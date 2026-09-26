@@ -147,6 +147,20 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.funnel{margin:4px 0;overflow-x:auto}
+.funnel .fin{min-width:640px}
+.funnel .fchev{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.funnel .fc{position:relative;color:#fff;padding:14px 26px 14px 30px;font-family:var(--label);font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;line-height:1.35;display:flex;align-items:center;min-height:58px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+.funnel .fc1{clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%);padding-left:16px}
+.funnel .fc1{background:#6b6b6b}.funnel .fc2{background:#3d3d3d}.funnel .fc3{background:var(--ink)}.funnel .fc4{background:var(--red)}
+.funnel .fdet{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.funnel .fd{border:1px solid var(--rule);border-top:3px solid var(--red);padding:12px 12px 14px;background:#fff}
+.funnel .fd:nth-child(even){background:var(--band)}
+.funnel .fd small{display:block;font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.funnel .fd h4{font-family:var(--head);font-size:17px;line-height:1.25;margin:4px 0 10px}
+.funnel .fd p{margin:4px 0 0;font-size:14px;line-height:1.45;font-style:italic;color:var(--muted)}
+.funnel .fscale{display:flex;align-items:center;gap:10px;margin-top:12px;font-family:var(--label);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.funnel .fscale i{flex:1;height:2px;background:linear-gradient(90deg,var(--rule),var(--red))}
 </style>
 </head>
 <body>
@@ -167,7 +181,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Customer advocacy</span><span class="tag">Sales enablement</span></div>
     <h1>A customer story funnel, from deal to case study</h1>
     <p class="dek">Uniphore's GTM teams had no single place to find customer stories and use cases by industry. I built a system that captured them at every stage, from open deals to finished case studies.</p>
-    <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Sales, CS, partners, and marketing</div></div></div>
+    <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Sales, CS, Partners, and Marketing</div></div></div>
   </header>
 </div></div>
 
@@ -184,15 +198,15 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
       <div class="glance">
         <h2>At a glance</h2>
         <dl>
-          <dt>Situation</dt><dd>GTM teams lacked a repository and a cohesive mix of customer stories across industries and verticals.</dd>
-          <dt>My role</dt><dd>Created a system to capture use cases and stories at each stage of the customer journey.</dd>
+          <dt>Situation</dt><dd>With expanding global GTM teams, vertical and industry-specific use cases being pitched or tried out at multiple stages of the sales journey in one geography were not always captured and shared with other geographies.</dd>
+          <dt>My role</dt><dd>Created a system to capture use cases and stories at each stage of the prospect and customer journey.</dd>
           <dt>Result</dt><dd>A monthly capture process, a repository in the enablement platform, and input to win-loss interviews.</dd>
         </dl>
       </div>
 
       <section id="context"><h2>Context</h2><p>Uniphore sells to enterprises across many industries and verticals.</p></section>
 
-      <section id="problem"><h2>The problem</h2><p>GTM teams lacked a repository of customer stories and use cases, and the stories they had weren't a cohesive mix across industries and verticals.</p></section>
+      <section id="problem"><h2>The problem</h2><p>As the GTM teams expanded globally, vertical and industry-specific use cases pitched or tried out in one geography often stayed there. There was no system to capture them at each stage of the sales journey or share them across regions, so teams elsewhere couldn't reuse what was already working.</p></section>
 
       <section id="role">
         <h2>My role</h2>
@@ -204,12 +218,12 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Capture stories before deals close</h3><p>Use cases and industry were captured during the deal stage (typically from Stage 3 to won or lost) as one-slide summaries.</p><p class="why"><b>Why:</b> Waiting for finished case studies meant waiting months. Early capture gave sales relevant examples right away.</p></div></li><li><div><h3>Record why we won or lost</h3><p>Win and loss stories, with reasons, were published right after each deal closed.</p><p class="why"><b>Why:</b> Fresh reasons are more accurate, and they fed directly into win-loss analysis.</p></div></li><li><div><h3>Grow stories over time</h3><p>Quick results after implementation became one-slide summaries with product dashboards. Full case studies followed after one to three months, as slides, videos, and long-form web pages.</p><p class="why"><b>Why:</b> Each stage produced something usable, while building toward a full story.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Capture stories before deals close</h3><p>Use cases and industry were captured during the deal stage (typically from Stage 3 to won or lost) as one-slide summaries.</p><p class="why"><b>Why:</b> Industry-specific use case knowledge (whether won or lost) captured at the deal stage helps support the larger GTM teams better.</p></div></li><li><div><h3>Record why we won or lost</h3><p>Win and loss stories, with reasons, were published right after each deal closed.</p><p class="why"><b>Why:</b> Fresh reasons are more accurate, and they fed directly into win-loss analysis.</p></div></li><li><div><h3>Grow stories over time</h3><p>Quick results after implementation became one-slide summaries with product dashboards. Full case studies followed after one to three months, as slides, videos, and long-form web pages.</p><p class="why"><b>Why:</b> Each stage produced something usable, while building toward a full story.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Customer story funnel</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th>Stage</th><th>Story type</th><th>Format</th></tr></thead><tbody><tr><td>Open deal (Stage 3+)</td><td>Use case and industry</td><td>One-slide summary</td></tr><tr><td>Deal closed</td><td>Win or loss story, with reasons</td><td>One-slide summary</td></tr><tr><td>After implementation</td><td>Quick results</td><td>One slide with product dashboards</td></tr><tr><td>1–3 months later</td><td>Full case study</td><td>Slides, video, web page</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Customer story funnel</span><b>Recreated sample</b></div><div class="inner"><div class="funnel" role="img" aria-label="Customer story funnel from open deal to full case study"><div class="fin"><div class="fchev"><div class="fc fc1"><span>Open deal (Stage 3+)</span></div><div class="fc fc2"><span>Deal closed</span></div><div class="fc fc3"><span>After implementation</span></div><div class="fc fc4"><span>1–3 months later</span></div></div><div class="fdet"><div class="fd"><small>Story</small><h4>Use case and industry</h4><small>Format</small><p>One-slide summary</p></div><div class="fd"><small>Story</small><h4>Win or loss story, with reasons</h4><small>Format</small><p>One-slide summary</p></div><div class="fd"><small>Story</small><h4>Quick results</h4><small>Format</small><p>One slide with product dashboards</p></div><div class="fd"><small>Story</small><h4>Full case study</h4><small>Format</small><p>Slides, video, web page</p></div></div><div class="fscale"><span>Fast, lightweight</span><i></i><span>Full, polished story</span></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">

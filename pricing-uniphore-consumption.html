@@ -147,6 +147,26 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.pricing{margin:4px 0;overflow-x:auto}
+.pricing .pin{display:flex;align-items:stretch;min-width:620px;gap:0}
+.pricing .pp{flex:1;border:1px solid var(--rule);padding:16px 16px 14px;background:#fff}
+.pricing .pp.old{border-top:4px solid #8a8a8a;background:var(--band)}
+.pricing .pp.new{border-top:4px solid var(--red)}
+.pricing h4{font-family:var(--head);font-size:21px;margin:0 0 10px}
+.pricing .old h4{color:#555}.pricing .new h4{color:var(--red)}
+.pricing .pr{padding:8px 0;border-top:1px solid var(--rule)}
+.pricing .pr small{display:block;font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.pricing .pr p{margin:3px 0 0;font-size:15px;line-height:1.4}
+.pricing .old .pr p{color:#555}
+.pricing .pt{margin-top:10px;border-top:1px solid var(--rule);padding-top:10px}
+.pricing .pt svg{display:block;width:100%;height:34px}
+.pricing .pt polyline{fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.pricing .old polyline{stroke:#8a8a8a}.pricing .new polyline{stroke:var(--red)}
+.pricing .pt span{display:block;margin-top:6px;font-family:var(--label);font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pricing .new .pt span{color:var(--red)}
+.pricing .parr{flex:0 0 74px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.pricing .parr span{font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.pricing .parr i{display:block;width:44px;height:14px;background:var(--ink);clip-path:polygon(0 30%,65% 30%,65% 0,100% 50%,65% 100%,65% 70%,0 70%)}
 </style>
 </head>
 <body>
@@ -166,7 +186,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   <header class="cs">
     <div class="tags"><span class="tag">Pricing</span><span class="tag">Market research</span></div>
     <h1>Moving from seat-based to consumption pricing</h1>
-    <p class="dek">Market research showed Uniphore's agent-seat pricing was out of step with customers. Moving to consumption-based pricing kept customers who were about to leave.</p>
+    <p class="dek">Our bi-annual market research showed Uniphore's agent-seat pricing was out of step with customers. Moving to consumption-based pricing kept customers who were about to leave.</p>
     <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Enterprise customers</div></div></div>
   </header>
 </div></div>
@@ -192,12 +212,12 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="context"><h2>Context</h2><p>Uniphore priced its AI products per agent seat.</p></section>
 
-      <section id="problem"><h2>The problem</h2><p>Uniphore's products were doing their job: customers using the Self-Serve product were taking load off their agents, so their agent counts were going down. Speech Analytics also helped them find more use cases to move to self-serve, reducing agent numbers further.</p><p>Under per-seat pricing, that success worked against Uniphore. As agent counts fell, the value customers got no longer matched how they were charged, and six customers were on the verge of leaving.</p></section>
+      <section id="problem"><h2>The problem</h2><p>Uniphore's products were doing their job: customers using the Self-Serve product were taking load off their agents, so their agent counts, as well as per-agent seat usage, were going down. Speech Analytics also helped them find more use cases to move to self-serve, further reducing usage.</p><p>The per-seat cost followed usual industry norms, where each seat was expected to be used for a minimum number of mandated hours <span class="ph">[X hours]</span>. Customers noticed their usage going down and felt there was a price-value mismatch. Six enterprise customers were on the verge of leaving.</p></section>
 
       <section id="role">
         <h2>My role</h2>
         <div class="role">
-          <div><h3>I owned</h3><p>Contributing the market research and recommendation behind the pricing change</p></div>
+          <div><h3>I owned</h3><p>Instrumental for the market research and the recommendation behind the pricing change</p></div>
           <div><h3>I worked with</h3><p>Customer success, solutions engineering, and product management</p></div>
         </div>
       </section>
@@ -209,12 +229,12 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Seat-based versus consumption pricing</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th></th><th>Seat-based</th><th>Consumption-based</th></tr></thead><tbody><tr><td>Customer pays for</td><td>Each agent seat</td><td>What they actually use</td></tr><tr><td>As AI automates work</td><td>Pays for seats regardless of value</td><td>Cost follows value</td></tr><tr><td>Risk for vendor</td><td>Churn when seats shrink</td><td>Revenue grows with usage</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Seat-based versus consumption pricing</span><b>Illustrative sample</b></div><div class="inner"><div class="pricing" role="img" aria-label="Shift from seat-based to consumption-based pricing"><div class="pin"><div class="pp old"><h4>Seat-based</h4><div class="pr"><small>Customer pays for</small><p>Each agent seat</p></div><div class="pr"><small>As AI automates work</small><p>Pays for seats regardless of value</p></div><div class="pr"><small>Risk for vendor</small><p>Churn when seats shrink</p></div><div class="pt"><svg viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><polyline points="4,8 60,14 110,24 160,30 196,36"/></svg><span>Revenue shrinks as seats drop</span></div></div><div class="parr"><span>Shift</span><i></i></div><div class="pp new"><h4>Consumption-based</h4><div class="pr"><small>Customer pays for</small><p>What they actually use</p></div><div class="pr"><small>As AI automates work</small><p>Cost follows value</p></div><div class="pr"><small>Risk for vendor</small><p>Revenue grows with usage</p></div><div class="pt"><svg viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true"><polyline points="4,36 60,30 110,22 160,12 196,4"/></svg><span>Revenue grows with usage</span></div></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>Retained 6 customers who were on the verge of leaving</li></ul>
+        <ul class="outcomes"><li>Retained all the 6 customers who were on the verge of leaving</li></ul>
       </section>
     </article>
   </div>
