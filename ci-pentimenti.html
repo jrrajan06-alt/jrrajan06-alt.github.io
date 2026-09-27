@@ -126,7 +126,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 .copy{font-family:var(--label);font-size:12px;color:var(--muted)}
 
 @media (max-width:1000px){
-  .body{grid-template-columns:1fr;gap:0;padding-top:32px}
+  .body{grid-template-columns:minmax(0,1fr);gap:0;padding-top:32px}
   .toc{display:none}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts>div:nth-child(3){padding-left:0;border-left:0}
@@ -147,6 +147,18 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.brief{margin:4px 0;overflow-x:auto}
+.brief .bin{display:flex;align-items:stretch;min-width:720px}
+.brief .bstart{flex:0 0 120px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px 10px;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.5}
+.brief .barr{flex:0 0 18px;align-self:center;width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:16px solid var(--ink);margin-right:10px}
+.brief .bcards{flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.brief .bw{border:1px solid var(--rule);border-top:4px solid var(--red);padding:14px 12px 16px;background:#fff}
+.brief .bw:nth-child(2){background:var(--band)}
+.brief .bw.win{background:var(--ink);color:#fff;border-color:var(--ink);border-top-color:var(--red)}
+.brief .bw.win p{color:#ccc}
+.brief .bi svg{width:26px;height:26px;fill:none;stroke:var(--red);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.brief h4{font-family:var(--head);font-size:17px;line-height:1.25;margin:6px 0 6px}
+.brief .bw p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -167,7 +179,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Competitive intelligence</span><span class="tag">AI</span><span class="tag">Positioning</span></div>
     <h1>Automated competitive intelligence for a procurement tech startup</h1>
     <p class="dek">Pentimenti had no competitive intelligence. I set up an automated CI bot that gathered intel weekly, informed our positioning, and helped sales close deals.</p>
-    <div class="facts"><div><small>Company</small><div>A SaaSy Lassie Consulting for Pentimenti</div></div><div><small>My role</small><div>Fractional Principal PMM</div></div><div><small>Timeline</small><div>Oct 2025 – present</div></div><div><small>Space</small><div>RFP and proposal tech (Strategic Response Management)</div></div></div>
+    <div class="facts"><div><small>Company</small><div>A SaaSy Lassie Consulting for Pentimenti</div></div><div><small>My role</small><div>Fractional Principal PMM</div></div><div><small>Timeline</small><div>Oct 2025 – present</div></div><div><small>Space</small><div>RFP and Proposal Tech (Strategic Response Management)</div></div></div>
   </header>
 </div></div>
 
@@ -190,26 +202,26 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         </dl>
       </div>
 
-      <section id="context"><h2>Context</h2><p>Pentimenti builds software for responding to RFPs, proposals, and tenders. I joined as its fractional PMM through A SaaSy Lassie Consulting, setting up the entire PMM function from scratch.</p></section>
+      <section id="context"><h2>Context</h2><p>Pentimenti is a product that automates the workflow for bid identification and RFP response. I joined as its fractional PMM through A SaaSy Lassie Consulting, setting up the entire PMM function from scratch, including the competitive intelligence stack.</p></section>
 
       <section id="problem"><h2>The problem</h2><p>With no competitive intelligence, sales had nothing to show prospects on why Pentimenti was better than the alternatives. Positioning was also being created from zero, without a clear view of how competitors were positioned.</p></section>
 
       <section id="role">
         <h2>My role</h2>
         <div class="role">
-          <div><h3>I owned</h3><p>Setting up the CI function: the automated bot, the weekly intelligence, and using it to inform positioning</p></div>
+          <div><h3>I owned</h3><p>Setting up the CI function: the automated bot, disseminating weekly intelligence, and using it to inform positioning</p></div>
           <div><h3>I worked with</h3><p>The founders and the sales team</p></div>
         </div>
       </section>
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Automate collection from day one</h3><p>I set up an automated CI bot to gather competitive intelligence on a weekly basis, rather than doing it manually.</p><p class="why"><b>Why:</b> At a startup with no PMM function, time is the scarcest resource. Automating collection meant I could spend time on analysis and positioning instead.</p></div></li><li><div><h3>Use CI to build positioning</h3><p>The intelligence gathered didn't just go to sales. I used it directly to shape Pentimenti's positioning, identifying where competitors were weak and where Pentimenti had a genuine edge.</p><p class="why"><b>Why:</b> Positioning built on real competitive data is harder for competitors to copy than positioning built on assumptions.</p></div></li><li><div><h3>Make it usable for sales immediately</h3><p>Sales received clear, specific points on why Pentimenti was better than each competitor, ready to use in conversations.</p><p class="why"><b>Why:</b> A startup's first few deals depend on the founder and early sellers articulating differentiation clearly.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Automate collection from day one</h3><p>I set up an automated CI bot to gather competitive intelligence on a weekly basis, rather than doing it manually.</p><p class="why"><b>Why:</b> As a solo PMM, automating parts of my work was important to move faster and better.</p></div></li><li><div><h3>Use CI to build positioning</h3><p>As I was also working on Pentimenti's positioning, the CI helped shape it. I could focus on where Pentimenti had an edge and use that for a differentiated narrative.</p><p class="why"><b>Why:</b> As a small startup, clearly differentiated positioning helped us stand out in a cluttered market.</p></div></li><li><div><h3>Make it usable for sales immediately</h3><p>Sales received clear, specific points on why Pentimenti was better than each competitor, ready to use in conversations.</p><p class="why"><b>Why:</b> A startup's first few deals depend on the founder and early sellers articulating differentiation clearly.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Weekly CI bot output: sections</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Section</th><th>What it covers</th></tr></thead><tbody><tr><td>Competitor moves</td><td>New features, pricing changes, partnerships, and announcements</td></tr><tr><td>Positioning watch</td><td>How competitors describe themselves and what they claim</td></tr><tr><td>Where we win</td><td>Our genuine advantages, with evidence</td></tr><tr><td>Where we're vulnerable</td><td>Gaps to be aware of in deals</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Sales talking points: sample</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Competitor</th><th>Why we win</th></tr></thead><tbody><tr><td>Competitor A</td><td>We cover end-to-end agentic RFP response; they handle only parts of the workflow</td></tr><tr><td>Competitor B</td><td>Our AI automates more steps; they still require manual work at key stages</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Weekly CI bot output: sections</span><b>Illustrative sample</b></div><div class="inner"><div class="brief" role="img" aria-label="Weekly CI bot output: competitor moves, positioning watch, where we win, where we're vulnerable"><div class="bin"><div class="bstart"><span>CI bot runs<br>every week</span></div><div class="barr"></div><div class="bcards"><div class="bw"><span class="bi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h4>Competitor moves</h4><p>New features, pricing changes, partnerships, and announcements</p></div><div class="bw"><span class="bi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h4>Positioning watch</h4><p>How competitors describe themselves and what they claim</p></div><div class="bw win"><span class="bi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><h4>Where we win</h4><p>Our genuine advantages, with evidence</p></div><div class="bw"><span class="bi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v5"/><path d="M12 18h.01"/></svg></span><h4>Where we're vulnerable</h4><p>Gaps to be aware of in deals</p></div></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Sales talking points: sample</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Competitor</th><th>Why we win</th></tr></thead><tbody><tr><td>Competitor A</td><td>We are agentic across the RFP response workflow; they handle only parts of the workflow</td></tr><tr><td>Competitor B</td><td>Our AI helps you arrive at a bid/no-bid decision in minutes, not months; they don't help you get there</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">

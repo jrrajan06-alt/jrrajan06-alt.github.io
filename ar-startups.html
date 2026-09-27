@@ -126,7 +126,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 .copy{font-family:var(--label);font-size:12px;color:var(--muted)}
 
 @media (max-width:1000px){
-  .body{grid-template-columns:1fr;gap:0;padding-top:32px}
+  .body{grid-template-columns:minmax(0,1fr);gap:0;padding-top:32px}
   .toc{display:none}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts>div:nth-child(3){padding-left:0;border-left:0}
@@ -147,6 +147,24 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.fit{margin:4px 0;overflow-x:auto}
+.fit .fin{min-width:640px}
+.fit .axis{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.fit .ax{font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 12px;color:#fff}
+.fit .ax1{background:var(--ink);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%)}
+.fit .ax2{background:var(--red);clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%,14px 50%);padding-left:26px;margin-left:-4px}
+.fit .fcols{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.fit .fc{border:1px solid var(--rule);border-top:4px solid var(--red);background:#fff;padding:14px 14px 16px}
+.fit .fc2{background:var(--band)}
+.fit small{display:block;font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.fit .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.fit .chip{border:1px solid var(--ink);padding:4px 9px;font-family:var(--head);font-size:15px;font-weight:700;background:#fff}
+.fit .fc p{margin:0;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.fit .any{display:flex;align-items:stretch;margin-top:12px;border:1px solid var(--ink)}
+.fit .anyl{flex:0 0 120px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:10px}
+.fit .anyb{flex:1;padding:12px 14px}
+.fit .anyb h4{font-family:var(--head);font-size:17px;line-height:1.25;margin:0 0 4px}
+.fit .anyb p{margin:0;font-size:14.5px;line-height:1.5;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -190,7 +208,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         </dl>
       </div>
 
-      <section id="context"><h2>Context</h2><p>Through my fractional PMM practice, A SaaSy Lassie Consulting, I work with early-stage startups in procurement tech, climate tech, hospitality, cybersecurity, and ed-tech. One of them, Pentimenti, works in Strategic Response Management: software that helps companies respond to RFPs, proposals, and tenders.</p></section>
+      <section id="context"><h2>Context</h2><p>Through my fractional PMM practice, A SaaSy Lassie Consulting, I work with early-stage startups in procurement tech, climate tech, hospitality, cybersecurity, and ed-tech.</p></section>
 
       <section id="problem"><h2>The problem</h2><p>Startups rarely have what analysts usually look for: years of market presence, large customer bases, and big marketing budgets. The largest firms may not cover a category until it is established.</p><p>So the question was where to start, and what a young company could show that would make analysts want to keep talking.</p></section>
 
@@ -209,7 +227,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Analyst fit by company stage</span><b>Illustrative sample</b></div><div class="inner"><table><thead><tr><th>Company stage</th><th>Where to start</th><th>Why</th></tr></thead><tbody><tr><td>Early stage, small team</td><td>Industry-specific firms and advisors, e.g. Everest Group, Opus Research, McKinsey</td><td>More open to new vendors; deep knowledge of the niche</td></tr><tr><td>Scale-up with a clear category</td><td>IDC, Forrester, Gartner</td><td>Broad influence on enterprise shortlists</td></tr><tr><td>Any stage</td><td>Firms already covering competitors</td><td>Already researching the market</td></tr></tbody></table></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Startup analyst briefing: agenda</span><b>Illustrative sample</b></div><div class="inner"><ol class="slides"><li>Who we are and why now</li><li>The business problem we solve</li><li>Our technology and what makes it different</li><li>Live demo</li><li>Customer on the call: their results</li><li>Where we are going next</li><li>Questions for the analyst</li></ol></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Engagement structure</span><b>Illustrative sample</b></div><div class="inner"><div class="cal"><div><b>Monthly</b><ul><li>Analyst digest: product, customers, and news</li></ul></div><div><b>Regularly</b><ul><li>Briefings with priority analysts</li></ul></div><div><b>Quarterly</b><ul><li>Broader update on strategy and momentum</li></ul></div><div><b>Ongoing</b><ul><li>Track where competitors are featured</li></ul></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Analyst fit by company stage</span><b>Illustrative sample</b></div><div class="inner"><div class="fit" role="img" aria-label="Analyst fit by company stage: early stage starts with industry-specific firms and advisors; scale-ups with a clear category approach IDC, Forrester, and Gartner; at any stage, firms already covering competitors"><div class="fin"><div class="axis"><div class="ax ax1">Early stage, small team</div><div class="ax ax2">Scale-up with a clear category</div></div><div class="fcols"><div class="fc"><small>Where to start: industry-specific firms and advisors</small><div class="chips"><span class="chip">Everest Group</span><span class="chip">Opus Research</span><span class="chip">McKinsey</span></div><small>Why</small><p>More open to new vendors; deep knowledge of the niche</p></div><div class="fc fc2"><small>Where to start</small><div class="chips"><span class="chip">IDC</span><span class="chip">Forrester</span><span class="chip">Gartner</span></div><small>Why</small><p>Broad influence on enterprise shortlists</p></div></div><div class="any"><div class="anyl">Any stage</div><div class="anyb"><h4>Firms already covering competitors</h4><p>Already researching the market</p></div></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Startup analyst briefing: agenda</span><b>Illustrative sample</b></div><div class="inner"><ol class="slides"><li>Who we are and why now</li><li>The business problem we solve</li><li>Our technology and what makes it different</li><li>Live demo</li><li>Customer on the call: their results</li><li>Where we are going next</li><li>Questions for the analyst</li></ol></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Engagement structure</span><b>Illustrative sample</b></div><div class="inner"><div class="cal"><div><b>Monthly</b><ul><li>Analyst digest: product, customers, and news</li></ul></div><div><b>Regularly</b><ul><li>Briefings with priority analysts</li></ul></div><div><b>Quarterly</b><ul><li>Broader update on strategy and momentum</li></ul></div><div><b>Ongoing</b><ul><li>Track where competitors are featured</li></ul></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">

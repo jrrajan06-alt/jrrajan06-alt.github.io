@@ -126,7 +126,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 .copy{font-family:var(--label);font-size:12px;color:var(--muted)}
 
 @media (max-width:1000px){
-  .body{grid-template-columns:1fr;gap:0;padding-top:32px}
+  .body{grid-template-columns:minmax(0,1fr);gap:0;padding-top:32px}
   .toc{display:none}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts>div:nth-child(3){padding-left:0;border-left:0}
@@ -147,6 +147,22 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.digest{margin:4px 0;overflow-x:auto}
+.digest .din{min-width:640px;border:1px solid var(--ink);background:#fff;padding:18px 20px 20px}
+.digest .dname{text-align:center;font-family:var(--head);font-size:30px;font-weight:800;line-height:1.1;margin:0}
+.digest .dline{display:flex;justify-content:space-between;border-top:3px double var(--ink);border-bottom:1px solid var(--ink);margin-top:12px;padding:6px 0;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.digest .dline span:last-child{color:var(--red)}
+.digest .dcols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:16px}
+.digest .dc{padding:0 16px}
+.digest .dc:first-child{padding-left:0}
+.digest .dc:last-child{padding-right:0}
+.digest .dc+.dc{border-left:1px solid var(--rule)}
+.digest .dfor{display:inline-block;background:var(--red);color:#fff;font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px}
+.digest .dc:nth-child(2) .dfor{background:var(--ink)}
+.digest h4{font-family:var(--head);font-size:19px;line-height:1.2;margin:10px 0 8px}
+.digest .dc p{margin:0 0 12px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.digest .dtext i{display:block;height:6px;background:var(--rule);margin-top:7px}
+.digest .dtext i:nth-child(2){width:92%}.digest .dtext i:nth-child(3){width:70%}
 </style>
 </head>
 <body>
@@ -167,12 +183,12 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Competitive intelligence</span><span class="tag">Strategy</span></div>
     <h1>A competitive intelligence program for sales and the C-suite</h1>
     <p class="dek">As LLMs brought a wave of new competitors into customer experience, I built one CI program that gave sales quick answers and gave leadership a clear view of where the market was heading.</p>
-    <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Sales, the CPO, and the CEO</div></div></div>
+    <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Sales, CPO, CEO, and the Board</div></div></div>
   </header>
 </div></div>
 
 <main class="wrap">
-  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>100%</b><span>Sales adoption of the monthly CI digest</span></div><div class="res"><b>Monthly</b><span>Digest, with collection automated through Klue and Google Alerts</span></div><div class="res"><b>Pivot</b><span>Insights helped pivot product strategy, and company strategy with it</span></div></section>
+  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>100%</b><span>Sales adoption of the monthly CI digest</span></div><div class="res"><b>Monthly</b><span>Digest, with collection automated through Klue and Google Alerts</span></div><div class="res"><b>Pivot</b><span>Insights helped pivot product strategy, and company strategy along with it</span></div></section>
 
   <div class="body">
     <aside class="toc" aria-label="On this page">
@@ -204,17 +220,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>One program, two uses</h3><p>The program was both a complete CI repository and a ready-to-use monthly digest for multiple stakeholders.</p><p class="why"><b>Why:</b> Some people needed depth; most needed the essentials quickly.</p></div></li><li><div><h3>Separate sections for each audience</h3><p>The digest covered top competitor moves (new customers, launches, M&A, partnerships, analyst mentions), market and industry trends for CXOs, and sales-specific highlights on how we compared.</p><p class="why"><b>Why:</b> Sales and executives need different things from the same intelligence.</p></div></li><li><div><h3>Automate the collection</h3><p>Information was gathered automatically through Klue and Google Alerts.</p><p class="why"><b>Why:</b> Time went into analysis rather than gathering.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Separate sections for each audience</h3><p>The digest covered top competitor moves (new customers, launches, M&A, partnerships, analyst mentions), market and industry trends for CXOs, and sales-specific highlights on how we compared.</p><p class="why"><b>Why:</b> Sales and executives need different things from the same intelligence.</p></div></li><li><div><h3>Automate the collection</h3><p>Information was gathered automatically through Klue and Google Alerts.</p><p class="why"><b>Why:</b> Time went into analysis rather than gathering.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Monthly CI digest: sections</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th>Section</th><th>For</th><th>What it covers</th></tr></thead><tbody><tr><td>Competitor moves</td><td>Everyone</td><td>New customers, launches, M&A, partnerships, analyst mentions</td></tr><tr><td>Market and industry trends</td><td>CXOs</td><td>Where the market is heading</td></tr><tr><td>How we compare</td><td>Sales</td><td>Strengths and responses for live deals</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Monthly CI digest: sections</span><b>Recreated sample</b></div><div class="inner"><div class="digest" role="img" aria-label="Monthly CI digest with three sections: competitor moves for everyone, market and industry trends for CXOs, how we compare for sales"><div class="din"><p class="dname">The CI Digest</p><div class="dline"><span>Monthly edition</span><span>Competitive intelligence</span></div><div class="dcols"><div class="dc"><span class="dfor">For everyone</span><h4>Competitor moves</h4><p>New customers, launches, M&amp;A, partnerships, analyst mentions</p><div class="dtext" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="dc"><span class="dfor">For CXOs</span><h4>Market and industry trends</h4><p>Where the market is heading</p><div class="dtext" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="dc"><span class="dfor">For sales</span><h4>How we compare</h4><p>Strengths and responses for live deals</p><div class="dtext" aria-hidden="true"><i></i><i></i><i></i></div></div></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>100% sales adoption of the monthly digest</li><li>Insights helped pivot product strategy, and company strategy with it</li></ul>
+        <ul class="outcomes"><li>100% sales adoption of the monthly digest</li><li>Insights helped pivot product strategy, and company strategy along with it</li></ul>
       </section>
     </article>
   </div>

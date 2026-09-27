@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Building an analyst relations function from scratch | Janani Rangarajan</title>
+<title>Scaling an analyst relations function | Janani Rangarajan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Libre+Franklin:wght@500;600;700&display=swap" rel="stylesheet">
@@ -126,7 +126,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 .copy{font-family:var(--label);font-size:12px;color:var(--muted)}
 
 @media (max-width:1000px){
-  .body{grid-template-columns:1fr;gap:0;padding-top:32px}
+  .body{grid-template-columns:minmax(0,1fr);gap:0;padding-top:32px}
   .toc{display:none}
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts>div:nth-child(3){padding-left:0;border-left:0}
@@ -147,6 +147,35 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.digest{margin:4px 0;overflow-x:auto}
+.digest .din{min-width:640px;border:1px solid var(--ink);background:#fff;padding:18px 20px 20px}
+.digest .dname{text-align:center;font-family:var(--head);font-size:30px;font-weight:800;line-height:1.1;margin:0}
+.digest .dline{display:flex;justify-content:space-between;border-top:3px double var(--ink);border-bottom:1px solid var(--ink);margin-top:12px;padding:6px 0;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.digest .dline span:last-child{color:var(--red)}
+.digest .dcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:16px;row-gap:16px}
+.digest .dc{padding:0 16px}
+.digest .dc:nth-child(3n+1){padding-left:0}
+.digest .dc:nth-child(3n){padding-right:0}
+.digest .dc:not(:nth-child(3n+1)){border-left:1px solid var(--rule)}
+.digest .dc:nth-child(n+4){border-top:1px solid var(--ink);padding-top:14px}
+.digest h4{font-family:var(--head);font-size:18px;line-height:1.2;margin:0 0 6px}
+.digest .dc p{margin:0 0 10px;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.digest .dc q{display:block;font-family:var(--head);font-style:italic;font-size:14.5px;line-height:1.4;border-left:3px solid var(--red);padding-left:8px;margin:0 0 10px}
+.digest .dtext i{display:block;height:6px;background:var(--rule);margin-top:7px}
+.digest .dtext i:nth-child(2){width:80%}
+.sorter{margin:4px 0;overflow-x:auto}
+.sorter .sin{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;min-width:640px}
+.sorter .sl{position:relative;aspect-ratio:16/10;border:1px solid var(--ink);background:#fff;padding:10px 10px 8px;display:flex;flex-direction:column;box-shadow:3px 3px 0 var(--rule)}
+.sorter .sl:first-child{background:var(--ink);color:#fff}
+.sorter .sl:last-child{background:var(--band)}
+.sorter .sl h4{font-family:var(--head);font-size:14.5px;line-height:1.25;margin:0}
+.sorter .sl .sb{margin-top:auto;margin-right:22px}
+.sorter .sl .sb i{display:block;height:4px;background:var(--rule);margin-top:5px}
+.sorter .sl .sb i:nth-child(2){width:70%}
+.sorter .sl:first-child .sb i{background:#444}
+.sorter .sn{position:absolute;right:8px;bottom:6px;font-family:var(--label);font-size:10px;font-weight:700;color:var(--red)}
+.sorter .sl:first-child .sn{color:#ff6b72}
+.sorter .sl::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--red)}
 </style>
 </head>
 <body>
@@ -165,13 +194,13 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
   <header class="cs">
     <div class="tags"><span class="tag">Analyst relations</span><span class="tag">Sales enablement</span></div>
-    <h1>Building an analyst relations function from scratch</h1>
-    <p class="dek">Uniphore's enterprise buyers wanted analyst validation before they signed, and the company wasn't showing up in the research they read. I set up an AR function that changed that.</p>
+    <h1>Scaling an analyst relations function</h1>
+    <p class="dek">Uniphore's enterprise buyers wanted analyst validation before they signed, and the company wasn't showing up in the research they read. I helped scale the existing AR function to improve analyst engagement processes and increase our mentions.</p>
     <div class="facts">
       <div><small>Company</small><div>Uniphore</div></div>
       <div><small>My role</small><div>Senior Product Marketing Manager</div></div>
       <div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div>
-      <div><small>Audience</small><div>Industry analysts, enterprise buyers, sales</div></div>
+      <div><small>Audience</small><div>Industry analysts, Enterprise buyers, Sales</div></div>
     </div>
   </header>
 </div></div>
@@ -180,7 +209,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
   <section class="results" style="margin-top:56px" aria-label="Key results">
     <div class="res"><b>5</b><span>Analyst firms featuring Uniphore: Gartner, Forrester, IDC, Everest Group, Opus Research</span></div>
-    <div class="res"><b>Repeat</b><span>Leader and challenger positions in analyst research</span></div>
+    <div class="res"><b>Repeat</b><span>Leader and challenger positions in analyst research reports (Gartner MQ, Forrester Wave)</span></div>
     <div class="res"><b>Monthly</b><span>Briefings with every priority analyst, plus a monthly analyst digest</span></div>
   </section>
 
@@ -200,8 +229,8 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
       <div class="glance">
         <h2>At a glance</h2>
         <dl>
-          <dt>Situation</dt><dd>No active AR function, few report mentions, and enterprise deals slowing while buyers looked for analyst validation.</dd>
-          <dt>My role</dt><dd>Set up and ran the analyst relations function.</dd>
+          <dt>Situation</dt><dd>An AR function existed but engagement was irregular, report mentions were few, and enterprise deals slowed while buyers looked for analyst validation.</dd>
+          <dt>My role</dt><dd>Helped scale the analyst relations function and ran the ongoing analyst relationships.</dd>
           <dt>Result</dt><dd>Repeat leader and challenger mentions across five analyst firms, removing a friction point from enterprise sales.</dd>
         </dl>
       </div>
@@ -214,14 +243,14 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="problem">
         <h2>The problem</h2>
-        <p>Uniphore had no active analyst relations function, and it wasn't being featured in many reports. That showed up in sales: enterprise customers needed analyst validation, and without it, deals took longer to close.</p>
+        <p>Uniphore had an AR function, but engagement with analysts was irregular, and it wasn't being featured in many reports. That showed up in sales: enterprise customers needed analyst validation, and without it, deals took longer to close.</p>
         <p>AR wasn't the only thing slowing the sales cycle, but it was a friction point we could remove.</p>
       </section>
 
       <section id="role">
         <h2>My role</h2>
         <div class="role">
-          <div><h3>I owned</h3><p>Setting up the AR process, choosing which analysts to engage, and running the ongoing relationships. I was also the person briefing the analysts</p></div>
+          <div><h3>I owned</h3><p>Streamlining the AR process, choosing which analysts to engage, and running the ongoing relationships. I was one of the people briefing the analysts and had the added responsibility of bringing in JAPAC and EMEA perspectives to these briefings</p></div>
           <div><h3>I worked with</h3><p><b>Internally:</b> product owners; the CMO, CPO, and VP of Product Marketing; sales leaders; an AR project manager; and customer success, who helped line up customer references and use cases</p><p style="margin-top:10px"><b>Externally:</b> the analysts themselves, and our customers, who spoke with analysts as references</p></div>
         </div>
       </section>
@@ -230,7 +259,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         <h2>Approach: key decisions</h2>
         <ol class="decisions">
           <li><div><h3>Focus on the analysts our buyers actually read</h3><p>Rather than trying to brief every firm, I identified which analysts covered our market and influenced enterprise CX buyers, and prioritized those relationships.</p><p class="why"><b>Why:</b> Analyst time is limited, and so was ours. Mentions only help sales if they appear in the research buyers check during evaluations.</p></div></li>
-          <li><div><h3>Meet every priority analyst every month</h3><p>I streamlined how Uniphore engaged analysts, with a clear owner and a monthly briefing with each analyst on their own cadence.</p><p class="why"><b>Why:</b> Recognition comes from analysts knowing a company over time. One-off conversations don't lead to repeat mentions.</p></div></li>
+          <li><div><h3>Meet every priority analyst every month</h3><p>I was part of the team that streamlined how Uniphore engaged analysts, with a clear owner and a monthly briefing with each analyst on their own cadence.</p><p class="why"><b>Why:</b> Recognition comes from analysts knowing a company over time. One-off conversations don't lead to repeat mentions.</p></div></li>
           <li><div><h3>Keep analysts updated between briefings</h3><p>I created a monthly analyst digest covering what was new in the product, new customers, strategic company updates, customer soundbites, new case studies, and how our product team had used analysts' input.</p><p class="why"><b>Why:</b> Analysts cover many vendors. A regular, proactive update kept Uniphore's momentum visible, and showing how we acted on their feedback made the relationship two-way.</p></div></li>
           <li><div><h3>Turn analyst recognition into a sales tool</h3><p>Analyst mentions went into every collateral and sales playbook, and sales used them in pitch decks and RFP responses. I also pulled out the most useful findings, such as our strengths and how we compared with competitors, and fed them into sales enablement and competitive intelligence.</p><p class="why"><b>Why:</b> The goal wasn't recognition for its own sake. It was giving sales a credible, third-party answer to "why choose you over a competitor?"</p></div></li>
         </ol>
@@ -239,25 +268,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
       <section id="built">
         <h2>What I built</h2>
 
-        <figure class="sample">
-          <div class="doc">
-            <div class="bar"><span>Monthly analyst digest</span><b>Recreated sample</b></div>
-            <div class="inner">
-              <table>
-                <thead><tr><th>Section</th><th>What it covered</th></tr></thead>
-                <tbody>
-                  <tr><td>What's new in the product</td><td>Releases and feature updates from the past month</td></tr>
-                  <tr><td>New customers</td><td>Recent wins, e.g. "Customer A, a global bank, went live in EMEA"</td></tr>
-                  <tr><td>Company updates</td><td>Strategic news: partnerships, expansion, leadership</td></tr>
-                  <tr><td>Customer soundbites</td><td>Short quotes on results customers were seeing</td></tr>
-                  <tr><td>New case studies</td><td>Links to newly published customer stories</td></tr>
-                  <tr><td>You said, we did</td><td>How the product team acted on analysts' feedback</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <figcaption>Recreated sample; originals confidential.</figcaption>
-        </figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Monthly analyst digest</span><b>Recreated sample</b></div><div class="inner"><div class="digest" role="img" aria-label="Monthly analyst digest with six sections: what&#39;s new in the product, new customers, company updates, customer soundbites, new case studies, and you said, we did"><div class="din"><p class="dname">The Analyst Digest</p><div class="dline"><span>Monthly edition</span><span>For industry analysts</span></div><div class="dcols"><div class="dc"><h4>What&#39;s new in the product</h4><p>Releases and feature updates from the past month</p><div class="dtext" aria-hidden="true"><i></i><i></i></div></div><div class="dc"><h4>New customers</h4><p>Recent wins, for example:</p><q>Customer A, a global bank, went live in EMEA</q></div><div class="dc"><h4>Company updates</h4><p>Strategic news: partnerships, expansion, leadership</p><div class="dtext" aria-hidden="true"><i></i><i></i></div></div><div class="dc"><h4>Customer soundbites</h4><p>Short quotes on results customers were seeing</p><div class="dtext" aria-hidden="true"><i></i><i></i></div></div><div class="dc"><h4>New case studies</h4><p>Links to newly published customer stories</p><div class="dtext" aria-hidden="true"><i></i><i></i></div></div><div class="dc"><h4>You said, we did</h4><p>How the product team acted on analysts&#39; feedback</p><div class="dtext" aria-hidden="true"><i></i><i></i></div></div></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
 
         <figure class="sample">
           <div class="doc">
@@ -295,24 +306,7 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
           <figcaption>Illustrative sample; originals confidential.</figcaption>
         </figure>
 
-        <figure class="sample">
-          <div class="doc">
-            <div class="bar"><span>Analyst briefing deck: outline</span><b>Sample</b></div>
-            <div class="inner">
-              <ol class="slides">
-                <li>Company update and momentum</li>
-                <li>Our point of view on the market</li>
-                <li>Product strategy and roadmap</li>
-                <li>Live demo highlights</li>
-                <li>Customer proof points</li>
-                <li>Differentiation versus the market</li>
-                <li>Partner ecosystem</li>
-                <li>Questions for the analyst</li>
-              </ol>
-            </div>
-          </div>
-          <figcaption>Illustrative sample; originals confidential.</figcaption>
-        </figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Analyst briefing deck: outline</span><b>Sample</b></div><div class="inner"><div class="sorter" role="img" aria-label="Analyst briefing deck outline: eight slides in order"><div class="sin"><div class="sl"><h4>Company update and momentum</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">1</span></div><div class="sl"><h4>Our point of view on the market</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">2</span></div><div class="sl"><h4>Product strategy and roadmap</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">3</span></div><div class="sl"><h4>Live demo highlights</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">4</span></div><div class="sl"><h4>Customer proof points</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">5</span></div><div class="sl"><h4>Differentiation versus the market</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">6</span></div><div class="sl"><h4>Partner ecosystem</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">7</span></div><div class="sl"><h4>Questions for the analyst</h4><div class="sb" aria-hidden="true"><i></i><i></i></div><span class="sn">8</span></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
