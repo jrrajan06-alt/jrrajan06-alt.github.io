@@ -147,6 +147,35 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* research inputs: outside-in and inside-out feeding the study */
+.pack{margin:4px 0;overflow-x:auto}
+.pack .kin{display:flex;align-items:stretch;min-width:720px}
+.pack .rows{flex:1;display:flex;flex-direction:column;gap:10px}
+.pack .row{display:flex;gap:8px;align-items:stretch}
+.pack .rlab{flex:0 0 108px;white-space:nowrap;display:flex;flex-direction:column;justify-content:center;padding:10px;background:var(--band);border-left:4px solid var(--ink)}
+.pack .rlab b{font-family:var(--head);font-size:16px;line-height:1.2}
+.pack .rlab small{font-family:var(--label);font-size:11px;color:var(--muted);line-height:1.35;margin-top:4px}
+.pack .kcards{flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.pack .kc{border:1px solid var(--rule);border-top:4px solid var(--red);background:#fff;padding:12px 12px 14px}
+.pack h4{font-family:var(--head);font-size:16px;line-height:1.25;margin:0 0 6px}
+.pack .kc p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+.pack .karr{flex:0 0 18px;align-self:center;width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:16px solid var(--ink);margin:0 0 0 10px}
+.pack .kend{flex:0 0 116px;margin-left:10px;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px 10px;gap:8px}
+.pack .kend small{font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ff6b72}
+.pack .kend b{font-family:var(--head);font-size:15px;line-height:1.3;font-weight:700}
+/* questions: a chain ending in build or acquire */
+.qflow{overflow-x:auto;padding:4px 0}
+.qflow .qin{display:flex;align-items:stretch;min-width:720px}
+.qflow .q{flex:1;border:1px solid var(--ink);background:#fff;padding:14px 12px;display:flex;flex-direction:column;gap:8px}
+.qflow .q span{font-family:var(--head);font-weight:800;font-size:22px;line-height:1;color:var(--red)}
+.qflow .q p{margin:0;font-family:var(--head);font-size:16px;line-height:1.35;font-weight:600}
+.qflow .qa{flex:0 0 22px;align-self:center;display:flex;justify-content:center}
+.qflow .qa::before{content:"";width:0;height:0;border-top:9px solid transparent;border-bottom:9px solid transparent;border-left:11px solid var(--ink)}
+.qflow .q.last{background:var(--band)}
+.qflow .fork{display:flex;gap:6px;margin-top:auto}
+.qflow .fork b{flex:1;text-align:center;font-family:var(--label);font-size:12px;font-weight:700;padding:6px 4px;background:var(--ink);color:#fff}
+.qflow .fork b+b{background:var(--red)}
 </style>
 </head>
 <body>
@@ -166,18 +195,18 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   <header class="cs">
     <div class="tags"><span class="tag">Market research</span><span class="tag">Positioning</span></div>
     <h1>Genesys' annual product and organization market strategy research</h1>
-    <p class="dek">Every year, Genesys runs a global market strategy study to shape its product and organization strategy. I contributed the APAC view, drawing on sales, customers, and the field, and it helped lead to Genesys's experience orchestrator messaging.</p>
-    <div class="facts"><div><small>Company</small><div>Genesys</div></div><div><small>My role</small><div>Senior Marketing Manager</div></div><div><small>Timeline</small><div>Aug 2024 – May 2025</div></div><div><small>Audience</small><div>Product and marketing leadership</div></div></div>
+    <p class="dek">Every year, Genesys runs a global market strategy study to shape its product and organization strategy. I contributed the APAC view, drawing on sales, customers, and the field, and it helped lead to Genesys's agentic orchestration messaging.</p>
+    <div class="facts"><div><small>Company</small><div>Genesys</div></div><div><small>My role</small><div>Senior Marketing Manager</div></div><div><small>Timeline</small><div>Aug 2024 – May 2025</div></div><div><small>Audience</small><div>Genesys Leadership</div></div></div>
   </header>
 </div></div>
 
 <main class="wrap">
-  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>Annual</b><span>Global product and organization strategy research</span></div><div class="res"><b>APAC</b><span>Learnings and positioning beta-test results I contributed</span></div><div class="res"><b>Orchestrator</b><span>Messaging shaped by the study</span></div></section>
+  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>Annual</b><span>Global product and organization strategy research</span></div><div class="res"><b>APAC</b><span>Learnings and positioning beta-test results I contributed</span></div><div class="res"><b>Agentic</b><span>Orchestration messaging shaped by the study</span></div></section>
 
   <div class="body">
     <aside class="toc" aria-label="On this page">
       <b>On this page</b>
-      <a href="#context">Context</a><a href="#problem">The problem</a><a href="#role">My role</a><a href="#approach">Approach</a><a href="#builds">What I built</a><a href="#results">Results</a>
+      <a href="#context">Context</a><a href="#problem">The problem</a><a href="#role">My role</a><a href="#approach">Approach</a><a href="#built">What I built</a><a href="#results">Results</a>
     </aside>
 
     <article class="narrow">
@@ -186,11 +215,11 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         <dl>
           <dt>Situation</dt><dd>Genesys needed a yearly, joined-up view of the market to set product and company direction.</dd>
           <dt>My role</dt><dd>Contributed APAC learnings, customer feedback, and positioning beta-test results to the global study.</dd>
-          <dt>Result</dt><dd>Influenced product strategy and helped lead to the experience orchestrator messaging.</dd>
+          <dt>Result</dt><dd>Influenced product strategy and helped lead to the agentic orchestration messaging.</dd>
         </dl>
       </div>
 
-      <section id="context"><h2>Context</h2><p>Genesys sells contact centre and customer experience software worldwide.</p></section>
+      <section id="context"><h2>Context</h2><p>Genesys sells contact centre and customer experience software worldwide. It has run this study for a long time, to always stay on top of market movements.</p></section>
 
       <section id="problem"><h2>The problem</h2><p>The research had to answer big questions each year: what the product strategy should be, how Genesys should position itself, which capabilities it was missing, and whether to build those capabilities or acquire companies that had them.</p></section>
 
@@ -204,17 +233,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Combine outside-in and inside-out views</h3><p>The research looked at external factors (market movement, analyst reports, and competitor consolidation) and internal ones: what was and wasn't working for GTM teams, what customers were saying through CS, and what solutions engineers saw as product strengths and gaps.</p><p class="why"><b>Why:</b> Neither view is enough alone. The market shows where things are heading; the field shows what's actually happening in deals.</p></div></li><li><div><h3>Connect the dots into decisions</h3><p>Findings were brought together into a larger picture: product strategy, positioning, missing capabilities, and whether to build or acquire.</p><p class="why"><b>Why:</b> Leadership needs choices, not just data.</p></div></li><li><div><h3>Test positioning with real buyers</h3><p>Positioning beta tests in APAC fed results into the global study.</p><p class="why"><b>Why:</b> Tested positioning is more convincing to leadership than opinion.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Combine outside-in and inside-out views</h3><p>The research looked at external factors (market movement, analyst reports, and competitor consolidation) and internal ones: what was and wasn't working for GTM teams, what customers were saying through CS, and what solutions engineers saw as product strengths and gaps.</p><p class="why"><b>Why:</b> Neither view is enough alone. The market shows where things are heading; the field shows what's actually happening in deals.</p></div></li><li><div><h3>Connect the dots into decisions</h3><p>Findings were brought together into a larger picture: product strategy, positioning, missing capabilities, and whether to build or acquire.</p><p class="why"><b>Why:</b> Leadership needs choices, not just data.</p></div></li><li><div><h3>Test positioning with real buyers</h3><p>Positioning beta tests in APAC fed results into the global study. The <a href="ar-genesys.html">analyst relations case study</a> has a summary of what we tested.</p><p class="why"><b>Why:</b> Tested positioning is more convincing to leadership than opinion.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Research inputs</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th>Source</th><th>What it told us</th></tr></thead><tbody><tr><td>Market movement</td><td>Where the market is heading</td></tr><tr><td>Analyst reports</td><td>How analysts see the market and vendors</td></tr><tr><td>Competitor consolidation</td><td>Who is buying whom, and why</td></tr><tr><td>GTM teams</td><td>What is and isn't working in deals</td></tr><tr><td>Customer success</td><td>What customers are saying</td></tr><tr><td>Solutions engineering</td><td>Product strengths and gaps</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Questions the research answered</span><b>Recreated sample</b></div><div class="inner"><ol class="slides"><li>What should the product strategy be?</li><li>How should we position ourselves?</li><li>Which capabilities are we missing?</li><li>Should we build them, or acquire companies that have them?</li></ol></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Research inputs</span><b>Recreated sample</b></div><div class="inner"><div class="pack" role="img" aria-label="Research inputs. Outside-in: market movement showed where the market is heading; analyst reports showed how analysts see the market and vendors; competitor consolidation showed who is buying whom, and why. Inside-out: GTM teams showed what is and isn't working in deals; customer success showed what customers are saying; solutions engineering showed product strengths and gaps. All fed the global strategy study."><div class="kin"><div class="rows"><div class="row"><div class="rlab"><b>Outside-in</b><small>The market</small></div><div class="kcards"><div class="kc"><h4>Market movement</h4><p>Where the market is heading</p></div><div class="kc"><h4>Analyst reports</h4><p>How analysts see the market and vendors</p></div><div class="kc"><h4>Competitor consolidation</h4><p>Who is buying whom, and why</p></div></div></div><div class="row"><div class="rlab"><b>Inside-out</b><small>The field</small></div><div class="kcards"><div class="kc"><h4>GTM teams</h4><p>What is and isn't working in deals</p></div><div class="kc"><h4>Customer success</h4><p>What customers are saying</p></div><div class="kc"><h4>Solutions engineering</h4><p>Product strengths and gaps</p></div></div></div></div><div class="karr"></div><div class="kend"><small>Fed into</small><b>Global strategy study</b></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Questions the research answered</span><b>Recreated sample</b></div><div class="inner"><div class="qflow" role="img" aria-label="Questions the research answered, in order: 1, what should the product strategy be? 2, how should we position ourselves? 3, which capabilities are we missing? 4, should we build them, or acquire companies that have them?"><div class="qin"><div class="q"><span>1</span><p>What should the product strategy be?</p></div><div class="qa"></div><div class="q"><span>2</span><p>How should we position ourselves?</p></div><div class="qa"></div><div class="q"><span>3</span><p>Which capabilities are we missing?</p></div><div class="qa"></div><div class="q last"><span>4</span><p>Should we build them, or acquire companies that have them?</p><div class="fork"><b>Build</b><b>Acquire</b></div></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>Influenced Genesys's product strategy</li><li>Helped lead to the experience orchestrator messaging</li><li>APAC customer and field input included in the global view</li></ul>
+        <ul class="outcomes"><li>Influenced Genesys's product strategy</li><li>Helped lead to the agentic orchestration messaging</li></ul>
       </section>
     </article>
   </div>

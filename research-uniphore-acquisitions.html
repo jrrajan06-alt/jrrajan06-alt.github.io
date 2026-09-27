@@ -147,6 +147,39 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
   .res b{font-size:34px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* research inputs: sources feeding the strategy document */
+.pack{margin:4px 0;overflow-x:auto}
+.pack .kin{display:flex;align-items:stretch;min-width:700px}
+.pack .kcards{flex:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.pack .kc{border:1px solid var(--rule);border-top:4px solid var(--red);background:#fff;padding:14px 12px 16px}
+.pack .kc:nth-child(even){background:var(--band)}
+.pack h4{font-family:var(--head);font-size:17px;line-height:1.25;margin:0 0 8px}
+.pack .kc p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+.pack .kc small{display:block;margin-bottom:6px;font-family:var(--label);font-size:11px;font-weight:600;color:var(--red)}
+.pack .karr{flex:0 0 18px;align-self:center;width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:16px solid var(--ink);margin:0 0 0 10px}
+.pack .kend{flex:0 0 116px;margin-left:10px;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:14px 10px;gap:8px}
+.pack .kend small{font-family:var(--label);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ff6b72}
+.pack .kend b{font-family:var(--head);font-size:15px;line-height:1.3;font-weight:700}
+/* strategy document: outline as a document page */
+.sheetwrap{overflow-x:auto;padding:4px 0}
+.sheet{min-width:520px;max-width:640px;margin:0 auto;border:1px solid var(--ink);background:#fff;padding:20px 22px 22px}
+.sheet .sh-head{border-bottom:3px double var(--ink);padding-bottom:10px;margin-bottom:14px;text-align:center}
+.sheet .sh-head b{display:block;font-family:var(--head);font-size:22px;font-weight:800;line-height:1.2}
+.sheet .sh-head small{font-family:var(--label);font-size:12px;color:var(--muted)}
+.sheet .grp{display:flex;gap:14px;align-items:stretch}
+.sheet .grp+.grp{margin-top:14px}
+.sheet .secs{flex:1;border-left:3px solid var(--rule);padding-left:14px}
+.sheet .dir .secs{border-left-color:var(--red)}
+.sheet .sec{display:flex;gap:10px;padding:8px 0}
+.sheet .sec+.sec{border-top:1px solid var(--rule)}
+.sheet .sec>span{font-family:var(--head);font-weight:800;font-size:18px;line-height:1.3;color:var(--muted);min-width:14px}
+.sheet .dir .sec>span{color:var(--red)}
+.sheet .sec h4{font-size:16px;line-height:1.3;margin:0 0 6px}
+.sheet .sec i{display:block;height:5px;background:var(--rule);margin-top:5px;width:92%}
+.sheet .sec i+i{width:70%}
+.sheet .gtag{flex:0 0 104px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--label);font-size:12px;font-weight:700;line-height:1.35;background:var(--band);color:var(--ink);padding:8px}
+.sheet .dir .gtag{background:var(--red);color:#fff}
 </style>
 </head>
 <body>
@@ -167,17 +200,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
     <div class="tags"><span class="tag">Market research</span><span class="tag">Product strategy</span></div>
     <h1>Market research that led to two acquisitions</h1>
     <p class="dek">With LLMs reshaping the market, Uniphore's leadership asked product marketing for a clear view of where things were heading. The research that followed shaped acquisitions and product direction.</p>
-    <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Leadership: product and company strategy</div></div></div>
+    <div class="facts"><div><small>Company</small><div>Uniphore</div></div><div><small>My role</small><div>Senior Product Marketing Manager</div></div><div><small>Timeline</small><div>Nov 2022 – Aug 2024</div></div><div><small>Audience</small><div>Uniphore Leadership</div></div></div>
   </header>
 </div></div>
 
 <main class="wrap">
-  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>2</b><span>Mergers and acquisitions in the language model space</span></div><div class="res"><b>4 weeks</b><span>Of research with teams, customers, and analysts</span></div><div class="res"><b>Twice a year</b><span>The assessment was repeated</span></div></section>
+  <section class="results" style="margin-top:56px" aria-label="Key results"><div class="res"><b>2</b><span>Acquisitions to address tech debt</span></div><div class="res"><b>4 weeks</b><span>Of research with teams, customers, and analysts</span></div><div class="res"><b>Twice a year</b><span>The assessment was repeated</span></div></section>
 
   <div class="body">
     <aside class="toc" aria-label="On this page">
       <b>On this page</b>
-      <a href="#context">Context</a><a href="#problem">The problem</a><a href="#role">My role</a><a href="#approach">Approach</a><a href="#builds">What I built</a><a href="#results">Results</a>
+      <a href="#context">Context</a><a href="#problem">The problem</a><a href="#role">My role</a><a href="#approach">Approach</a><a href="#built">What I built</a><a href="#results">Results</a>
     </aside>
 
     <article class="narrow">
@@ -185,14 +218,14 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
         <h2>At a glance</h2>
         <dl>
           <dt>Situation</dt><dd>LLMs were changing the market, and leadership wanted PMM's input on product and company direction.</dd>
-          <dt>My role</dt><dd>Led a market assessment covering internal and external perspectives.</dd>
+          <dt>My role</dt><dd>The PMM team worked together on a market assessment covering internal and external perspectives.</dd>
           <dt>Result</dt><dd>Two acquisitions, course correction on products with tech debt, and input to pricing strategy.</dd>
         </dl>
       </div>
 
       <section id="context"><h2>Context</h2><p>Uniphore sells conversational AI to enterprise contact centres. With LLMs in the market, the contact centre industry was changing quickly.</p></section>
 
-      <section id="problem"><h2>The problem</h2><p>Product marketing didn't yet have a clear view of the direction the market was taking, and leadership wanted strategic input for both product and company evolution.</p></section>
+      <section id="problem"><h2>The problem</h2><p>Leadership didn't have a clear view of where the market was heading, and wanted strategic input for both product and company evolution.</p></section>
 
       <section id="role">
         <h2>My role</h2>
@@ -204,17 +237,17 @@ footer h2{font-family:var(--mast);font-weight:400;font-size:40px;line-height:1;m
 
       <section id="approach">
         <h2>Approach: key decisions</h2>
-        <ol class="decisions"><li><div><h3>Hear from everyone close to the market</h3><p>The PMM team ran a four-week research exercise, getting on-the-ground perspectives from GTM teams, customers, market analysts, and a study of the competition.</p><p class="why"><b>Why:</b> Each group sees a different part of the market. Together they gave a complete picture.</p></div></li><li><div><h3>Focus the output on direction</h3><p>We created a strategy document showing what was working for us and in the industry, and the direction for growth.</p><p class="why"><b>Why:</b> Leadership needed decisions, not just data.</p></div></li><li><div><h3>Make it a regular exercise</h3><p>The assessment became a bi-annual initiative, which also informed the move to consumption pricing.</p><p class="why"><b>Why:</b> Markets shifting this fast needed regular check-ins.</p></div></li></ol>
+        <ol class="decisions"><li><div><h3>Hear from everyone close to the market</h3><p>The PMM team ran a four-week research exercise, getting on-the-ground perspectives from GTM teams, customers, and market analysts, alongside a study of the competition.</p><p class="why"><b>Why:</b> Each group sees a different part of the market. Together they give a larger picture.</p></div></li><li><div><h3>Focus the output on direction</h3><p>We created a strategy document showing what was working: for us and in the industry. We also added the directions in which our organization and products could grow.</p><p class="why"><b>Why:</b> Just data does not give anything. The so what, aka insights from data is what makes this research valuable.</p></div></li><li><div><h3>Make it a regular exercise</h3><p>The assessment became a bi-annual initiative, which also informed the move to <a href="pricing-uniphore-consumption.html">consumption pricing</a>.</p><p class="why"><b>Why:</b> Creating a system for having a regular assessment in place helped us be on top of the industry trends and directions.</p></div></li></ol>
       </section>
 
       <section id="built">
         <h2>What I built</h2>
-        <figure class="sample"><div class="doc"><div class="bar"><span>Research inputs</span><b>Recreated sample</b></div><div class="inner"><table><thead><tr><th>Source</th><th>What we learned from them</th></tr></thead><tbody><tr><td>GTM teams</td><td>Deal patterns, objections, and customer requests</td></tr><tr><td>Customers</td><td>Priorities and plans for AI</td></tr><tr><td>Market analysts</td><td>Where the market is heading</td></tr><tr><td>Competition</td><td>Moves, launches, and positioning</td></tr></tbody></table></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Strategy document: outline</span><b>Illustrative sample</b></div><div class="inner"><ol class="slides"><li>What is working for us</li><li>What is working in the industry</li><li>Gaps and risks</li><li>Direction for growth</li><li>Recommendations for product and company</li></ol></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
+        <figure class="sample"><div class="doc"><div class="bar"><span>Research inputs</span><b>Recreated sample</b></div><div class="inner"><div class="pack" role="img" aria-label="Research inputs: GTM teams shared deal patterns, objections, what is working, and prospect requests; customers shared priorities and plans for AI, and what they like and don't like about our products; market analysts shared where the market is heading, trends, and observations; the competitor study covered funding, mergers, acquisitions, partnerships, leadership changes, launches, customers acquired and positioning. All four fed the strategy document."><div class="kin"><div class="kcards"><div class="kc"><h4>GTM teams</h4><small>Sales, CSMs, SEs, BDRs, and marketing</small><p>Deal patterns, objections, what is working, and prospect requests</p></div><div class="kc"><h4>Customers</h4><small>Enterprise contact centre leaders</small><p>Priorities and plans for AI, and what they like and don't like about our products</p></div><div class="kc"><h4>Market analysts</h4><small>Industry research and briefings</small><p>Where the market is heading, trends, and observations</p></div><div class="kc"><h4>Competition</h4><small>Competitor study</small><p>Moves: funding, mergers, acquisitions, partnerships, leadership changes, launches, customers acquired and positioning</p></div></div><div class="karr"></div><div class="kend"><small>Fed into</small><b>Strategy document</b></div></div></div></div></div><figcaption>Recreated sample; originals confidential.</figcaption></figure><figure class="sample"><div class="doc"><div class="bar"><span>Strategy document: outline</span><b>Illustrative sample</b></div><div class="inner"><div class="sheetwrap"><div class="sheet" role="img" aria-label="Strategy document outline. Where we are: 1, what is working for us; 2, what is working in the industry; 3, gaps and risks. Where to go: 4, direction for growth; 5, recommendations for product and company."><div class="sh-head"><b>Market assessment</b><small>Strategy document for leadership</small></div><div class="grp"><div class="secs"><div class="sec"><span>1</span><div style="flex:1"><h4>What is working for us</h4><i></i><i></i></div></div><div class="sec"><span>2</span><div style="flex:1"><h4>What is working in the industry</h4><i></i><i></i></div></div><div class="sec"><span>3</span><div style="flex:1"><h4>Gaps and risks</h4><i></i><i></i></div></div></div><div class="gtag">Where we are</div></div><div class="grp dir"><div class="secs"><div class="sec"><span>4</span><div style="flex:1"><h4>Direction for growth</h4><i></i><i></i></div></div><div class="sec"><span>5</span><div style="flex:1"><h4>Recommendations for product and company</h4><i></i><i></i></div></div></div><div class="gtag">Where to go</div></div></div></div></div></div><figcaption>Illustrative sample; originals confidential.</figcaption></figure>
       </section>
 
       <section id="results">
         <h2>Results</h2>
-        <ul class="outcomes"><li>Two mergers and acquisitions in the language model space</li><li>Redirection and course correction on a couple of products with tech debt</li><li>Research that informed the move to consumption-based pricing</li></ul>
+        <ul class="outcomes"><li>Two acquisitions to address tech debt</li><li>Course correction on two products with tech debt</li><li>Research that informed the move to consumption-based pricing</li></ul>
       </section>
     </article>
   </div>
